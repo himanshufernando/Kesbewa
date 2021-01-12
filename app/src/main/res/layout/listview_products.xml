@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="item"
+            type="tkhub.project.kesbewa.data.model.Products" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_dealer_to_visits"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="@{clickListener}"
+        app:cardBackgroundColor="@color/babypowder"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintlayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/babypowder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_coverimage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/babypowder"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <com.tuyenmonkey.mkloader.MKLoader
+                    android:id="@+id/mkloader_itemproduct"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:mk_color="@color/colorPrimaryDark"
+                    app:mk_type="Whirlpool" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Please Wait"
+                    android:textColor="@color/textcolor0"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/diavlo_light" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Image Is loading..."
+                    android:textColor="@color/textcolor0"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/diavlo_light" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_home_teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:pro_cover_img="@{item}"
+                    tools:src="@drawable/ic_no_image" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textview_discount"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:background="#DA2128"
+                android:textColor="@color/babypowder"
+                android:textSize="14sp"
+                app:fontFamily="@font/diavlo_light"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:setRegularPriceDiscount="@{item}"
+                tools:text="5000" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_home_proname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@{item.pro_name}"
+                android:textColor="@color/textcolor1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/diavlo_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout_coverimage"
+                tools:text="Lunch Sheets sdsdsdsd asddsdssd sdsdsds dsdsdsd dsdsdsd dsdsdsd" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_home_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="@{item.pro_code}"
+                android:textColor="@color/textcolor0"
+                android:textSize="15sp"
+                app:fontFamily="@font/diavlo_light"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_home_proname"
+                tools:text="LC001" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_home_promake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:text="@{item.pro_make}"
+                android:textColor="@color/textcolor0"
+                android:textSize="14sp"
+                app:fontFamily="@font/diavlo_light"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_home_code"
+                tools:text="Lunch Sheets" />
+
+            <TextView
+                android:id="@+id/textview_home_teacherclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@{Double.toString(item.pro_price) + ` LKR`}"
+                android:textColor="@color/textcolor1"
+                android:textSize="13sp"
+                app:fontFamily="@font/diavlo_light"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_home_promake"
+                tools:text="50" />
+
+
+            <TextView
+                android:id="@+id/textview_home_regprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:text="500"
+                android:textColor="@color/textcolor1"
+                android:textSize="13sp"
+                app:fontFamily="@font/diavlo_light"
+                app:layout_constraintStart_toEndOf="@+id/textview_home_teacherclass"
+                app:layout_constraintTop_toBottomOf="@+id/textview_home_promake"
+                app:setRegularPrice="@{item}"
+                tools:text="5000" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

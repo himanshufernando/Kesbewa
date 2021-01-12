@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">Kesbewa</string>
+    <string name="default_notification_channel_id">1001</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_products">Search Products</string>
+    <string name="our_products">OUR PRODUCTS</string>
+
+    <string name="select_color">Select Color</string>
+    <string name="add_quantity">Add Quantity</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="my_cart">MY CART</string>
+    <string name="my_address">MY ADDRESS</string>
+    <string name="remove">Remove</string>
+    <string name="go_to_checkout">GO TO CHECKOUT</string>
+    <string name="your_items">Your Items</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="delivery_to">Delivery To : </string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="order_note">Order Note</string>
+    <string name="discount">Discount</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="confirm_amp_complete"><![CDATA[Confirm & Complete]]></string>
+    <string name="promotions">Promotions</string>
+    <string name="add_promo_code">Add Promo Code</string>
+    <string name="your_choice">Your Choice</string>
+    <string name="continue_as_guest">CONTINUE AS A GUEST</string>
+    <string name="sing_up">SING UP</string>
+    <string name="login">LOGIN</string>
+    <string name="your_password">Your Password</string>
+    <string name="your_new_password">Your New Password</string>
+    <string name="confirm_your_password">Confirm Your Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_contact_number">Your Contact Number</string>
+    <string name="ex_himanshu_fernando">Ex : Himanshu Fernando</string>
+    <string name="your_email_address">Your eMail Address</string>
+    <string name="ex_0737788888">Ex :0737788888</string>
+    <string name="ex_abc_gmail_com">Ex :abc@gmail.com</string>
+    <string name="your_nic_number">Your NIC Number</string>
+    <string name="checkout">Check Out</string>
+    <string name="street_address">Street address</string>
+    <string name="street_address_2">Street address 2 (optional)</string>
+    <string name="guest_user">GUEST USER</string>
+    <string name="your_promo_code">Your Promo Code</string>
+    <string name="your_note">Your Note</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="you_don_t_have_any_delivery_address_please_add_address_to_continue">You don\'t have any delivery address,please add address to continue</string>
+
+    <string name="current_orders">CURRENT ORDERS</string>
+    <string name="past_orders">PAST ORDERS</string>
+
+
+    <string name="kesbewa">We are a group who came together under the brand "Kesbewa", with an ambition to minimize the polythene &amp; plastic usage of the Sri Lankan consumers by introducing compostable products to the market which can substitute polythene &amp; plastic in the longer run.</string>
+    <string name="our_mission">To preserve the costal line by helping people to minimizing the usage of polythene &amp; plastics and providing them with compostable substitute  products.</string>
+    <string name="our_vision">To provide an innovative and user friendly platform for every consumer to full fill their requirements of compostable products which will reduce the usage of polythene &amp; plastics who are the major contributors of sea pollution.
+</string>
+
+
+    <string name="msg_terms_titel_2">Please read the following terms and conditions carefully.</string>
+    <string name="msg_terms_titel_2_content">By using the pages in this App, you agree to these terms and conditions. If you do not agree, you should not use this App.</string>
+    <string name="msg_terms_titel_3">RESTRICTIONS ON USE</string>
+    <string name="msg_terms_titel_3_content1">Material from App,Facebook,instagram and any other World Wide Web owned, operated, licensed, or controlled by Kesbewa or any of its related, affiliated, or subsidiary companies may not be copied or distributed, or republished, uploaded, posted, or transmitted in any way, without the prior written consent of Kesbewa .</string>
+    <string name="msg_terms_titel_3_content2">Kesbewa grants you a limited license to access and make personal use of this web App but does not permit you to download or modify it, or any portion of it, except with prior written consent of Kesbewa .</string>
+    <string name="msg_terms_titel_4">RESTRICTION OF LIABILITY</string>
+    <string name="msg_terms_titel_4_content">Kesbewa will not be liable for any damages or injury caused by, including but not limited to, any failure of performance, error, omission, interruption, defect, delay in operation of transmission, computer virus, or line failure. Kesbewa will not be liable for any damages or injury, including but not limited to, special or consequential damages that result from the use of, or the inability to use, the materials in this App, even if there is negligence of Kesbewa or an authorized Kesbewa representative. </string>
+    <string name="msg_terms_titel_5">SUBMISSIONS / SUGGESTIONS</string>
+    <string name="msg_terms_titel_5_content">All remarks, suggestions, ideas, graphics, or other information communicated to Kesbewa through this App (together, the "Submission") will forever be the property of Kesbewa. Kesbewa will not be required to treat any Submission as confidential and will not be liable for any ideas for its business (including without limitation, product, or advertising ideas) and will not incur any liability as a result of any similarities that may appear in future Kesbewa operations. Without limitation, Kesbewa will have exclusive ownership of all present and future existing rights to the Submission of every kind and nature everywhere. Except as noted below in this paragraph, Kesbewa will be entitled to use the Submission for any commercial or other purpose whatsoever without compensation to you or any other person sending the Submission. Personally identifiable information that may be received at this App is provided voluntarily by a visitor to this App. This information is for internal purposes only and is not sold or otherwise transferred to third parties of Kesbewa or to other entities who are not involved in the operation of this App. The above right to use Submissions exclude non-retained information. You acknowledge that you are responsible for whatever material you submit, and you, not Kesbewa, have full responsibility for the message, including its legality, reliability, appropriateness, originality, and copyright.</string>
+    <string name="msg_terms_titel_6">ELECTRONIC COMMUNICATION</string>
+    <string name="msg_terms_titel_6_content">When you visit this Kesbewa App, use our services or send suggestions to Kesbewa App, you are communicating with it electronically. You consent to receive communications electronically. Kesbewa will communicate with you by e-mail or by posting notices on this App. You agree that all agreements, notices, disclosures and other communications that Kesbewa provide to you electronically satisfy any legal requirement that such communications be in writing.</string>
+    <string name="msg_terms_titel_7">YOUR ACCOUNT AND PASSWORD</string>
+    <string name="msg_terms_titel_7_content"> If you are under 18, you may use this App only with approval of a parent or guardian. Kesbewa and its affiliates reserve the right to refuse service, terminate accounts, remove or edit content or cancel orders at their sole discretion.</string>
+    <string name="msg_terms_titel_7_content2">You are responsible for all actions taken with your User ID and password, including fees. If you grant to share your User ID and password or your information with third parties to provide you additional services, you are responsible for all actions taken with your User ID and password and therefore you should review that third party\'s privacy policy. If you lose control of your password, you may lose substantial control over your personally identifiable information and may be subject to legally binding actions taken on your behalf. Therefore, we do not recommend that you disclose your password to any third parties. If your password has been compromised for any reason, you should immediately change your password.</string>
+    <string name="msg_terms_titel_8">COPYRIGHT</string>
+    <string name="msg_terms_titel_8_content">All content included on this Kesbewa App, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, software and all business process are the property of Kesbewa or its content suppliers and protected by Sri Lanka and international copyright laws. All software (services, API apps and etc.) and especially unique delivery / panning process used is the property of Kesbewa or its software suppliers and protected by Sri Lanka and international copyright laws. The compilation of all content on this App is the exclusive property of Kesbewa and protected by Sri Lanka and international copyright laws.</string>
+    <string name="msg_terms_titel_9">DISCLAIMER</string>
+    <string name="msg_terms_titel_9_content">The material in this App could include technical inaccuracies or typographical
+        errors. Kesbewa may make changes or improvements at any time. THE MATERIALS IN THIS APP ARE PROVIDED "AS IS"
+        AND WITHOUT WARRANTIES OF ANY KIND EITHER EXPRESSED OR IMPLIED, TO THE FULLEST EXTENT PERMISSIBLE PURSUANT
+        TO APPLICABLE LAW. Kesbewa DISCLAIMS ALL WARRANTIES OR MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+        Kesbewa DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE MATERIAL WILL BE UNINTERRUPTED OR ERROR-FREE,
+        THAT DEFECTS WILL BE CORRECTED, OR THAT THIS APP OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES
+        OR OTHER HARMFUL COMPONENTS. Kesbewa DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF OR THE RESULT OF THE USE OF THE MATERIAL IN THIS APP IN TERMS OF THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE.</string>
+    <string name="msg_terms_titel_10">TRADEMARK INFORMATION</string>
+    <string name="msg_terms_titel_10_content"> The following trademarks used herein are owned by Kesbewa and its affiliates: Kesbewa</string>
+    <string name="msg_terms_titel_11">MISCELLANEOUS</string>
+    <string name="msg_terms_titel_11_content">These Terms and Conditions will be governed and be interpreted pursuant to the laws of Sri Lanka, notwithstanding any principles of conflicts of law. If any part of these Terms and Conditions is unlawful, void, or unenforceable, that part will be deemed severable and will not affect the validity and enforceability of any remaining provisions. Possible evidence of the use of this App for illegal purposes will be provided to law enforcement authorities. This is the entire agreement between the parties relating to the use of this App. Kesbewa can revise these Terms and Conditions at any time by updating this posting.</string>
+    <string name="msg_terms_titel_12">DELIVERY</string>
+    <string name="msg_terms_titel_12_content">Kesbewa may decide the areas which can be delivered. Please review these
+        locations in Sri Lanka carefully if you wish to have your order delivered.</string>
+    <string name="msg_terms_titel_12_content2">The time period may vary from 3-10 workinday days from the order confirmation date.</string>
+    <string name="msg_terms_titel_13">AVAILABILITY</string>
+    <string name="msg_terms_titel_13_content">Kesbewa does not guarantee the availability of all products at all times. If you have paid for products which are not available, we would be happy to provide other items as substitutes for the same price.</string>
+    <string name="msg_terms_titel_14">RETURN</string>
+    <string name="msg_terms_titel_14_content">Kesbewa attempts to be as accurate as possible. However, Kesbewa does not warrant that product description or other content of this App is accurate, complete, reliable, current, or error-free. If a product offered by Kesbewa is not as described. A product may be returned if a customer has received a product that was not ordered or has received a product which does not meet the published specifications or is not in proper condition at the time of delivery. You are required to check your order carefully before the delivery person leaves your premises. In all other instances once a product is ordered it is considered sold and not returnable. Kesbewa does not offer money back guarantee or trial products. It is solely your responsibility to ensure that the product you are purchasing will satisfy your requirements.</string>
+    <string name="msg_terms_titel_16">TERMINATION</string>
+    <string name="msg_terms_titel_16_content">Kesbewa may terminate this agreement at any time. Kesbewa may terminate this agreement immediately without notice if, in its sole judgment, you breach any term or condition of this agreement.</string>
+    <string name="msg_terms_titel_17">DISPUTES</string>
+    <string name="msg_terms_titel_17_content">Any dispute relating in any way to your visit to Kesbewa or to products you purchase through Kesbewa shall be submitted to arbitration in Colombo, Sri Lanka, except that, to the extent you have in any manner violated or threatened to violate Kesbewa\'s intellectual property rights, Kesbewa may seek injunctive or other appropriate relief in any court in Sri Lanka, and you consent to exclusive jurisdiction and venue in such courts. Arbitration under this agreement shall be conducted under the rules prevailing in Sri Lanka. The arbitrator\'s award shall be binding and may be entered as a judgment in any court of competent jurisdiction. To the fullest extent permitted by applicable law, no arbitration under this Agreement shall be joined to an arbitration involving any other party subject to this Agreement, whether through class arbitration proceedings or otherwise.</string>
+    <string name="msg_terms_titel_18">JURISDICTION</string>
+    <string name="msg_terms_titel_18_content">Except as described otherwise, all materials in the Kesbewa App are made available only to provide information about Kesbewa. Kesbewa controls and operates this App from its head office in Colombo, Sri Lanka and makes no representation that these materials are appropriate or available for use in other locations. If you use this App from other locations you are responsible for compliance with applicable local laws.</string>
+
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u></string>
+
+    <string name="by_verifying_your_identity">By Verifying your identity, you agree to Kesbewa</string>
+
+    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC64yP9i7xjclQ0MTd64mC1BiP6ygbIwJM</string>
+    <string name="register">REGISTER</string>
+
+    <string-array name="province_list">
+        <item>Western</item>
+        <item>Western</item>
+        <item>Southern</item>
+        <item>North Western</item>
+        <item>Central</item>
+        <item>Sabaragamuwa</item>
+        <item>Uva</item>
+        <item>Northern</item>
+        <item>North Central</item>
+        <item>Eastern</item>
+    </string-array>
+
+
+    <string-array name="district_list">
+        <item>Select your district</item>
+        <item>Colombo</item>
+        <item>Gampaha</item>
+        <item>Kalutara</item>
+        <item>Galle</item>
+        <item>Hambantota</item>
+        <item>Matara</item>
+        <item>Kurunegala</item>
+        <item>Puttalam</item>
+        <item>Kandy</item>
+        <item>Matale</item>
+        <item>Nuwara Eliya</item>
+        <item>Kegalle</item>
+        <item>Ratnapura</item>
+        <item>Badulla</item>
+        <item>Moneragala</item>
+        <item>Jaffna</item>
+        <item>Kilinochchi</item>
+        <item>Mannar</item>
+        <item>Mullaitivu</item>
+        <item>Vavuniya</item>
+        <item>Anuradhapura</item>
+        <item>Polonnaruwa</item>
+        <item>Ampara</item>
+        <item>Batticaloa</item>
+        <item>Trincomalee</item>
+    </string-array>
+
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+</resources>

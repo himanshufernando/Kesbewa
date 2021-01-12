@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragment"
+    app:startDestination="@id/fragment_main">
+
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="tkhub.project.kesbewa.ui.fragment.MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/fragmentMainToLogin"
+            app:destination="@id/fragment_login"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/fragmentMainToHome"
+            app:destination="@id/fragment_home"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/fragmentMainToMyOrders"
+            app:destination="@id/fragment_myorders"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+        <action
+            android:id="@+id/fragmentMainToShowCase"
+            app:destination="@id/fragment_showcase"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="tkhub.project.kesbewa.ui.fragment.LoginFragment"
+        android:label="Fragment Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/fragmentLoginToRegistar"
+            app:destination="@id/fragment_register"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/fragmentLoginToHome"
+            app:destination="@id/fragment_home"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+        <action
+            android:id="@+id/fragmentLoginToGoogle"
+            app:destination="@id/fragment_signupGoogle"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+        <action
+            android:id="@+id/fragmentLoginToPasswordreset"
+            app:destination="@id/fragment_passwordreset"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="tkhub.project.kesbewa.ui.fragment.SingupFragment"
+        android:label="Fragment Register"
+        tools:layout="@layout/fragment_singup">
+
+
+        <action
+            android:id="@+id/fragmentRegisterToHome"
+            app:destination="@id/fragment_home"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+        <action
+            android:id="@+id/fragmentRegisterToLogin"
+            app:destination="@id/fragment_login"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="tkhub.project.kesbewa.ui.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+
+        <action
+            android:id="@+id/fragmentProductToProductContent"
+            app:destination="@id/fragment_product_content"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+        <action
+            android:id="@+id/fragmentProductToCart"
+            app:destination="@id/fragment_cart"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+
+        <!--nav-->
+        <action
+            android:id="@+id/fragmentHomeToMyOrders"
+            app:destination="@id/fragment_myorders"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_product_content"
+        android:name="tkhub.project.kesbewa.ui.fragment.ProductDetailFragment"
+        tools:layout="@layout/fragment_product_detail">
+
+
+        <action
+            android:id="@+id/fragmentProductToCart"
+            app:destination="@id/fragment_cart"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+
+        <action
+            android:id="@+id/fragmentProductToCheckOut"
+            app:destination="@id/fragment_checkout"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/fragmentProductToRegistor"
+            app:destination="@id/fragment_register"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_cart"
+        android:name="tkhub.project.kesbewa.ui.fragment.CartFragment"
+        android:label="Fragment Cart"
+        tools:layout="@layout/fragment_cart">
+
+
+
+        <action
+            android:id="@+id/fragmentCartToCheckOut"
+            app:destination="@id/fragment_checkout"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+        <action
+            android:id="@+id/fragmentCartToSingUp"
+            app:destination="@id/fragment_register"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/fragmentCartToMyOrders"
+            app:destination="@id/fragment_myorders"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_promotion"
+        android:name="tkhub.project.kesbewa.ui.fragment.PromoCodeFragment"
+        android:label="Fragment Promo"
+        tools:layout="@layout/fragment_promo_code">
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/fragment_checkout"
+        android:name="tkhub.project.kesbewa.ui.fragment.CheckOutFragment"
+        android:label="Fragment Check Out"
+        tools:layout="@layout/fragment_check_out">
+
+        <action
+            android:id="@+id/fragmentCheckOutToLogin"
+            app:destination="@id/fragment_login"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+
+        <action
+            android:id="@+id/fragmentCartToPromo"
+            app:destination="@id/fragment_promotion"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+        <action
+            android:id="@+id/fragmentCheckOutToAddress"
+            app:destination="@id/fragment_address"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+
+        <action
+            android:id="@+id/fragmentCheckOutToHome"
+            app:destination="@id/fragment_home"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="tkhub.project.kesbewa.ui.fragment.MapsFragment"
+        android:label="Fragment Map"
+        tools:layout="@layout/fragment_maps">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_address"
+        android:name="tkhub.project.kesbewa.ui.fragment.AddressFragment"
+        android:label="Fragment Address"
+        tools:layout="@layout/fragment_address">
+
+        <action
+            android:id="@+id/fragmentAddressToMap"
+            app:destination="@id/fragment_map"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_myorders"
+        android:name="tkhub.project.kesbewa.ui.fragment.nav.myorders.MyOrdersViewPagerFragment"
+        android:label="Fragment My Orders"
+        tools:layout="@layout/fragment_my_orders">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_about"
+        android:name="tkhub.project.kesbewa.ui.fragment.AboutFragment"
+        android:label="Fragment About"
+        tools:layout="@layout/fragment_about">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="tkhub.project.kesbewa.ui.fragment.ProfileFragment"
+        android:label="Fragment Profile"
+        tools:layout="@layout/fragment_profile">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_signupGoogle"
+        android:name="tkhub.project.kesbewa.ui.fragment.SingupGoogleFragment"
+        android:label="Fragment SingUp Google"
+        tools:layout="@layout/fragment_singup_google">
+
+
+        <action
+            android:id="@+id/fragmentSignupGoogleToHome"
+            app:destination="@id/fragment_home"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_passwordreset"
+        android:name="tkhub.project.kesbewa.ui.fragment.ResetPasswordFragment"
+        android:label="Fragment Reset Password"
+        tools:layout="@layout/fragment_reset_password">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_showcase"
+        android:name="tkhub.project.kesbewa.ui.fragment.nav.showcase.ShowCaseViewPageFragment"
+        android:label="Fragment Show Case"
+        tools:layout="@layout/fragment_show_case_view_page">
+
+    </fragment>
+
+</navigation>

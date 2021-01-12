@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="scrollChangeListener"
+            type="android.view.View.OnScrollChangeListener"/>
+        <variable
+            name="item"
+            type="tkhub.project.kesbewa.data.model.ProductImage" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/mkloader_itemproduct"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:mk_color="@color/colorPrimaryDark"
+            app:mk_type="Whirlpool" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Wait"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textcolor0"
+            android:textSize="15sp"
+            app:fontFamily="@font/diavlo_light"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mkloader_itemproduct" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Is loading..."
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textcolor0"
+            android:textSize="15sp"
+            app:fontFamily="@font/diavlo_light"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView_product_image_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            app:img_url_cover="@{item.img_url}" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_pro_image_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" >
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:img_url="@{item.img_url}"
+            android:src="@mipmap/ic_launcher" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

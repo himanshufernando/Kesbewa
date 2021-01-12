@@ -1,0 +1,173 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
+check.dependsOn 'assembleDebugAndroidTest'
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "tkhub.project.kesbewa"
+        minSdkVersion 17
+        targetSdkVersion 30
+        versionCode 32
+        versionName "1.3.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        key {
+            keyAlias 'kesbewa_alias'
+            keyPassword '1ajnutmaej74vu5bj'
+            storeFile file('D:\\Project\\Android\\Kesbewa\\kesbewa.jks')
+            storePassword 'dR1NN9D_6z-gWpnY6ijz1Eiw'
+        }
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_BASE_URL", '\"https://maps.googleapis.com/maps/api/place/\"'
+            signingConfig signingConfigs.key
+        }
+        debug {
+            buildConfigField "String", "API_BASE_URL", '\"https://maps.googleapis.com/maps/api/place/\"'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "androidx.core:core-ktx:1.2.0"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+
+    implementation 'com.google.firebase:firebase-database-ktx:19.5.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.firebase:firebase-perf:19.0.9'
+    implementation 'com.google.firebase:firebase-storage-ktx:19.2.1'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:17.3.0'
+
+
+
+    /*   implementation platform('com.google.firebase:firebase-bom:26.0.0')
+
+       implementation 'com.google.firebase:firebase-database-ktx'
+       implementation 'com.google.firebase:firebase-messaging'
+       implementation 'com.google.firebase:firebase-analytics'
+       implementation 'com.google.firebase:firebase-perf'
+       implementation 'com.google.firebase:firebase-auth'
+       implementation 'com.google.android.gms:play-services-maps:17.0.0'
+       implementation 'com.google.firebase:firebase-crashlytics'
+       implementation 'com.google.firebase:firebase-messaging-ktx'
+
+       implementation 'com.google.firebase:firebase-installations-ktx:16.3.3'*/
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    def nav_version = "2.3.0-alpha02"
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Dynamic Feature Module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
+
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+
+    implementation 'com.robinhood.ticker:ticker:2.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+    implementation("io.coil-kt:coil:0.10.1")
+
+    def room_version = "2.2.4"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation 'com.google.android.material:material:1.1.0-alpha09'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+
+    implementation 'com.hmomeni.progresscircula:progresscircula:0.2.1'
+
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.3'
+
+    def retrofitVersion = "2.6.2"
+    def okhttpVersion = "4.2.1"
+
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    //retrofit2
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    //okhttp3
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+    implementation("com.squareup.moshi:moshi:1.9.3")
+
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.9.3")
+
+
+}
+apply plugin: 'com.google.gms.google-services'
