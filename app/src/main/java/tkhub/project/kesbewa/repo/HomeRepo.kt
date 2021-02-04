@@ -220,9 +220,7 @@ class HomeRepo(val dataDao: OrderDao) {
             } else {
                 errorOrder.errorStatus = false
 
-
                 var key = genarateUniqCode()
-                println("aaaaa key :" + key)
 
                 val cartItem = CartItem(
                     key,
@@ -236,7 +234,8 @@ class HomeRepo(val dataDao: OrderDao) {
                     qty,
                     total,
                     true,
-                    pro.pro_code
+                    pro.pro_code,
+                    pro.pro_weight,pro.pro_stock
                 )
                 dataDao.insertCart(cartItem)
             }

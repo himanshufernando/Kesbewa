@@ -7,6 +7,10 @@
         <import type="android.view.View" />
 
         <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+        <variable
             name="scrollChangeListener"
             type="android.view.View.OnScrollChangeListener"/>
         <variable
@@ -17,6 +21,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:onClick="@{clickListener}"
         android:layout_height="match_parent">
 
         <com.tuyenmonkey.mkloader.MKLoader

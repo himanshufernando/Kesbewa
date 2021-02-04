@@ -9,14 +9,21 @@ import tkhub.project.kesbewa.ui.fragment.nav.showcase.ShowCaseTwoFragment
 const val SHOWCASE_ONE_INDEX = 0
 const val SHOWCASE_TWO_INDEX = 1
 
-class ShowCaseViewPagerAdapter (fragment: Fragment) : FragmentStateAdapter(fragment) {
-    private val tabFragmentsCreators: Map<Int, () -> Fragment> = mapOf(
-        SHOWCASE_ONE_INDEX to { ShowCaseOneFragment() },
-        SHOWCASE_TWO_INDEX to { ShowCaseTwoFragment() }
-    )
-    override fun getItemCount() = tabFragmentsCreators.size
-    override fun createFragment(position: Int): Fragment {
-        return tabFragmentsCreators[position]?.invoke() ?: throw IndexOutOfBoundsException()
+internal class ShowCaseViewPagerAdapter (fragment: Fragment) : FragmentStateAdapter(fragment) {
+
+    override fun createFragment(position: Int): Fragment = when (position) {
+        SHOWCASE_ONE_INDEX -> ShowCaseOneFragment()
+        SHOWCASE_TWO_INDEX -> ShowCaseTwoFragment()
+        else -> throw IllegalStateException("Invalid adapter position")
+    }
+
+    override fun getItemCount(): Int = 2
+    companion object {
+        internal const val TRANSACTION_SCREEN_OFFSCREEN_LIMIT = 1
+        internal const val TRANSACTION_SCREENS_NUMBER = 2
+        internal const val SHOWCASE_ONE_INDEX = 0
+        internal const val SHOWCASE_TWO_INDEX = 1
+
     }
 
 }

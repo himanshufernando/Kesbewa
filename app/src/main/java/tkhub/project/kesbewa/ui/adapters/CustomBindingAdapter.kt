@@ -78,6 +78,28 @@ object CustomBindingAdapter {
 
     }
 
+    @BindingAdapter("img_url_gal")
+    @JvmStatic
+    fun img_url_gal(view: ImageView, pro_img: String?) {
+
+        try {
+            Glide.with(Kesbewa.applicationContext())
+                .load(pro_img)
+                .format(DecodeFormat.PREFER_RGB_565)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .error(R.drawable.ic_no_image)
+                .into(view)
+
+        } catch (e: Exception) {
+            Glide.with(Kesbewa.applicationContext())
+                .load(R.drawable.ic_no_image)
+                .error(R.drawable.ic_no_image)
+                .into(view)
+
+        }
+
+    }
+
 
     @BindingAdapter("img_url")
     @JvmStatic

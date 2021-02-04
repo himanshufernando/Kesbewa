@@ -17,15 +17,22 @@ import tkhub.project.kesbewa.services.Perfrences.AppPrefs
  */
 class MainFragment : Fragment() {
 
+    var appPrefs  = AppPrefs
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         var inf = inflater.inflate(R.layout.fragment_main, container, false)
 
-        if(AppPrefs.getUserPrefs(context!!,AppPrefs.KEY_USER).user_name.isNullOrEmpty()){
-            findNavController(this).navigate(R.id.fragmentMainToLogin)
-          //  findNavController(this).navigate(R.id.fragmentMainToShowCase)
+        if(appPrefs.getUserPrefs(context!!,AppPrefs.KEY_USER).user_name.isNullOrEmpty()){
+
+            var showcase = appPrefs.getShowCaseVisibilityPrefs(context!!)
+            if(showcase==0){
+                findNavController(this).navigate(R.id.fragmentMainToShowCase)
+            }else{
+                findNavController(this).navigate(R.id.fragmentMainToLogin)
+            }
+
 
         }else{
             findNavController(this).navigate(R.id.fragmentMainToHome)

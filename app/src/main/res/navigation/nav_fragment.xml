@@ -360,6 +360,15 @@
         android:label="Fragment Show Case"
         tools:layout="@layout/fragment_show_case_view_page">
 
+
+        <action
+            android:id="@+id/fragmentShowCaseToLogin"
+            app:destination="@id/fragment_login"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
     </fragment>
 
 </navigation>

@@ -14,8 +14,8 @@ android {
         applicationId "tkhub.project.kesbewa"
         minSdkVersion 17
         targetSdkVersion 30
-        versionCode 32
-        versionName "1.3.2"
+        versionCode 34
+        versionName "1.3.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -31,7 +31,7 @@ android {
         key {
             keyAlias 'kesbewa_alias'
             keyPassword '1ajnutmaej74vu5bj'
-            storeFile file('D:\\Project\\Android\\Kesbewa\\kesbewa.jks')
+            storeFile file('C:\\Project\\Android\\Kesbewa\\kesbewa.jks')
             storePassword 'dR1NN9D_6z-gWpnY6ijz1Eiw'
         }
     }
@@ -167,6 +167,8 @@ dependencies {
     implementation("com.squareup.moshi:moshi:1.9.3")
 
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.9.3")
+
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
 
 
 }

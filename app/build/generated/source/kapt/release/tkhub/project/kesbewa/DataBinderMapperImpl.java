@@ -36,6 +36,7 @@ import tkhub.project.kesbewa.databinding.ListviewHistoryOrderItemBindingImpl;
 import tkhub.project.kesbewa.databinding.ListviewOrdersBindingImpl;
 import tkhub.project.kesbewa.databinding.ListviewOrdersPastBindingImpl;
 import tkhub.project.kesbewa.databinding.ListviewProductColorBindingImpl;
+import tkhub.project.kesbewa.databinding.ListviewProductImageGalleryBindingImpl;
 import tkhub.project.kesbewa.databinding.ListviewProductImagesBindingImpl;
 import tkhub.project.kesbewa.databinding.ListviewProductLargeImagesBindingImpl;
 import tkhub.project.kesbewa.databinding.ListviewProductSizeBindingImpl;
@@ -87,21 +88,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_LISTVIEWPRODUCTCOLOR = 21;
 
-  private static final int LAYOUT_LISTVIEWPRODUCTIMAGES = 22;
+  private static final int LAYOUT_LISTVIEWPRODUCTIMAGEGALLERY = 22;
 
-  private static final int LAYOUT_LISTVIEWPRODUCTLARGEIMAGES = 23;
+  private static final int LAYOUT_LISTVIEWPRODUCTIMAGES = 23;
 
-  private static final int LAYOUT_LISTVIEWPRODUCTSIZE = 24;
+  private static final int LAYOUT_LISTVIEWPRODUCTLARGEIMAGES = 24;
 
-  private static final int LAYOUT_LISTVIEWPRODUCTS = 25;
+  private static final int LAYOUT_LISTVIEWPRODUCTSIZE = 25;
 
-  private static final int LAYOUT_LISTVIEWPRODUCTSCHECKOUT = 26;
+  private static final int LAYOUT_LISTVIEWPRODUCTS = 26;
 
-  private static final int LAYOUT_LISTVIEWSEARCHADDRESS = 27;
+  private static final int LAYOUT_LISTVIEWPRODUCTSCHECKOUT = 27;
 
-  private static final int LAYOUT_TEST = 28;
+  private static final int LAYOUT_LISTVIEWSEARCHADDRESS = 28;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(28);
+  private static final int LAYOUT_TEST = 29;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(29);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.dialog_bottomsheet_cart, LAYOUT_DIALOGBOTTOMSHEETCART);
@@ -125,6 +128,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.listview_orders, LAYOUT_LISTVIEWORDERS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.listview_orders_past, LAYOUT_LISTVIEWORDERSPAST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.listview_product_color, LAYOUT_LISTVIEWPRODUCTCOLOR);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.listview_product_image_gallery, LAYOUT_LISTVIEWPRODUCTIMAGEGALLERY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.listview_product_images, LAYOUT_LISTVIEWPRODUCTIMAGES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.listview_product_large_images, LAYOUT_LISTVIEWPRODUCTLARGEIMAGES);
     INTERNAL_LAYOUT_ID_LOOKUP.put(tkhub.project.kesbewa.R.layout.listview_product_size, LAYOUT_LISTVIEWPRODUCTSIZE);
@@ -269,6 +273,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for listview_product_color is invalid. Received: " + tag);
         }
+        case  LAYOUT_LISTVIEWPRODUCTIMAGEGALLERY: {
+          if ("layout/listview_product_image_gallery_0".equals(tag)) {
+            return new ListviewProductImageGalleryBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for listview_product_image_gallery is invalid. Received: " + tag);
+        }
         case  LAYOUT_LISTVIEWPRODUCTIMAGES: {
           if ("layout/listview_product_images_0".equals(tag)) {
             return new ListviewProductImagesBindingImpl(component, view);
@@ -388,7 +398,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(28);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(29);
 
     static {
       sKeys.put("layout/dialog_bottomsheet_cart_0", tkhub.project.kesbewa.R.layout.dialog_bottomsheet_cart);
@@ -412,6 +422,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/listview_orders_0", tkhub.project.kesbewa.R.layout.listview_orders);
       sKeys.put("layout/listview_orders_past_0", tkhub.project.kesbewa.R.layout.listview_orders_past);
       sKeys.put("layout/listview_product_color_0", tkhub.project.kesbewa.R.layout.listview_product_color);
+      sKeys.put("layout/listview_product_image_gallery_0", tkhub.project.kesbewa.R.layout.listview_product_image_gallery);
       sKeys.put("layout/listview_product_images_0", tkhub.project.kesbewa.R.layout.listview_product_images);
       sKeys.put("layout/listview_product_large_images_0", tkhub.project.kesbewa.R.layout.listview_product_large_images);
       sKeys.put("layout/listview_product_size_0", tkhub.project.kesbewa.R.layout.listview_product_size);

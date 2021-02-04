@@ -12,8 +12,8 @@
         errorLine1="                        app:layout_constraintBottom_toTopOf=&quot;@+id/constraintLayout7&quot;"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="D:\Project\Android\Kesbewa\app\src\main\res\layout\fragment_singup.xml"
-            line="138"
+            file="C:\Project\Android\Kesbewa\app\src\main\res\layout\fragment_singup.xml"
+            line="121"
             column="25"/>
     </issue>
 

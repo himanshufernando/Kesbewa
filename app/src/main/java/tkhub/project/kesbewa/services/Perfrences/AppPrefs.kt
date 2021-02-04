@@ -100,6 +100,26 @@ object AppPrefs {
 
 
 
+
+
+
+    fun setShowCaseVisibilityPrefs(ctx: Context, value: Int) {
+        val sharedPref = ctx.getSharedPreferences(PREFNAME,Context.MODE_PRIVATE) ?: return
+        with(sharedPref.edit()) {
+            putInt(KEY_SHOWCASE, value)
+            commit()
+        }
+    }
+
+    fun getShowCaseVisibilityPrefs(ctx: Context): Int {
+        val sharedPref = ctx.getSharedPreferences(PREFNAME,Context.MODE_PRIVATE)
+        return sharedPref.getInt(KEY_SHOWCASE, 0)
+    }
+
+
+
+
+
     fun setOrderConfigPrefs(ctx: Context, value: OrderConfigLog) {
         val sharedPref = ctx.getSharedPreferences(PREFNAME,Context.MODE_PRIVATE) ?: return
         with(sharedPref.edit()) {

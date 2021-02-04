@@ -243,10 +243,21 @@ class CheckOutFragment : Fragment() {
                     }
                     is KesbewaResult.LogicError.LogError -> {
                         if(it.exception.errorCode == appPrefs.ERROR_SOMETHING_WENT_WRONG){
-                            if (!viewmodel.calculateFinalTotalCallResponse.hasObservers()) {
-                                calculateFinalTotalCallResponseObserver()
+
+                            if(dispatch == appPrefs.KEY_DISPATCH_DELIVERY){
+                                if (!viewmodel.userDeliveryAddress.hasObservers()) {
+                                    userDeliveryAddressObserver()
+                                }
+                                viewmodel.getDeliveryAddress()
+
+                                if (!viewmodel.deliveryChargesResponse.hasObservers()) {
+                                    deliveryChargesObserver()
+                                }
+                                viewmodel.callDeliveryCharges()
                             }
-                            viewmodel.calculateFinalTotal()
+
+
+                           
                         }
                         Toast.makeText(context, it.exception.errorMessage, Toast.LENGTH_SHORT)
                             .show()

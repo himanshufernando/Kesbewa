@@ -34,7 +34,11 @@ data class Products (
     @SerializedName("pro_note")
     var pro_note : String = "",
     @SerializedName("pro_price_regular")
-    var pro_price_regular : Double = 1.0
+    var pro_price_regular : Double = 1.0,
+    @SerializedName("pro_weight")
+    var pro_weight : Double = 1.0,
+    @SerializedName("pro_stock")
+    var pro_stock : Int = 0
 
 
 ) : Parcelable {

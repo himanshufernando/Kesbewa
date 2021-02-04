@@ -45,7 +45,7 @@ public final class OrderDao_Impl implements OrderDao {
     this.__insertionAdapterOfCartItem = new EntityInsertionAdapter<CartItem>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `carttable` (`cart_id`,`pro_id`,`pro_name`,`pro_price`,`pro_size`,`pro_image`,`pro_colour`,`pro_colour_code`,`pro_total_qty`,`pro_total_price`,`cartStatus`,`pro_code`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `carttable` (`cart_id`,`pro_id`,`pro_name`,`pro_price`,`pro_size`,`pro_image`,`pro_colour`,`pro_colour_code`,`pro_total_qty`,`pro_total_price`,`cartStatus`,`pro_code`,`pro_weight`,`pro_stock`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -111,6 +111,16 @@ public final class OrderDao_Impl implements OrderDao {
           stmt.bindNull(12);
         } else {
           stmt.bindString(12, value.getPro_code());
+        }
+        if (value.getPro_weight() == null) {
+          stmt.bindNull(13);
+        } else {
+          stmt.bindDouble(13, value.getPro_weight());
+        }
+        if (value.getPro_stock() == null) {
+          stmt.bindNull(14);
+        } else {
+          stmt.bindLong(14, value.getPro_stock());
         }
       }
     };
@@ -132,7 +142,7 @@ public final class OrderDao_Impl implements OrderDao {
     this.__updateAdapterOfCartItem = new EntityDeletionOrUpdateAdapter<CartItem>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `carttable` SET `cart_id` = ?,`pro_id` = ?,`pro_name` = ?,`pro_price` = ?,`pro_size` = ?,`pro_image` = ?,`pro_colour` = ?,`pro_colour_code` = ?,`pro_total_qty` = ?,`pro_total_price` = ?,`cartStatus` = ?,`pro_code` = ? WHERE `cart_id` = ?";
+        return "UPDATE OR ABORT `carttable` SET `cart_id` = ?,`pro_id` = ?,`pro_name` = ?,`pro_price` = ?,`pro_size` = ?,`pro_image` = ?,`pro_colour` = ?,`pro_colour_code` = ?,`pro_total_qty` = ?,`pro_total_price` = ?,`cartStatus` = ?,`pro_code` = ?,`pro_weight` = ?,`pro_stock` = ? WHERE `cart_id` = ?";
       }
 
       @Override
@@ -199,10 +209,20 @@ public final class OrderDao_Impl implements OrderDao {
         } else {
           stmt.bindString(12, value.getPro_code());
         }
-        if (value.getCart_id() == null) {
+        if (value.getPro_weight() == null) {
           stmt.bindNull(13);
         } else {
-          stmt.bindLong(13, value.getCart_id());
+          stmt.bindDouble(13, value.getPro_weight());
+        }
+        if (value.getPro_stock() == null) {
+          stmt.bindNull(14);
+        } else {
+          stmt.bindLong(14, value.getPro_stock());
+        }
+        if (value.getCart_id() == null) {
+          stmt.bindNull(15);
+        } else {
+          stmt.bindLong(15, value.getCart_id());
         }
       }
     };
@@ -379,6 +399,8 @@ public final class OrderDao_Impl implements OrderDao {
           final int _cursorIndexOfProTotalPrice = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_total_price");
           final int _cursorIndexOfCartStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "cartStatus");
           final int _cursorIndexOfProCode = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_code");
+          final int _cursorIndexOfProWeight = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_weight");
+          final int _cursorIndexOfProStock = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_stock");
           final List<CartItem> _result = new ArrayList<CartItem>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final CartItem _item;
@@ -432,7 +454,19 @@ public final class OrderDao_Impl implements OrderDao {
             _tmpCartStatus = _tmp == null ? null : _tmp != 0;
             final String _tmpPro_code;
             _tmpPro_code = _cursor.getString(_cursorIndexOfProCode);
-            _item = new CartItem(_tmpCart_id,_tmpPro_id,_tmpPro_name,_tmpPro_price,_tmpPro_size,_tmpPro_image,_tmpPro_colour,_tmpPro_colour_code,_tmpPro_total_qty,_tmpPro_total_price,_tmpCartStatus,_tmpPro_code);
+            final Double _tmpPro_weight;
+            if (_cursor.isNull(_cursorIndexOfProWeight)) {
+              _tmpPro_weight = null;
+            } else {
+              _tmpPro_weight = _cursor.getDouble(_cursorIndexOfProWeight);
+            }
+            final Integer _tmpPro_stock;
+            if (_cursor.isNull(_cursorIndexOfProStock)) {
+              _tmpPro_stock = null;
+            } else {
+              _tmpPro_stock = _cursor.getInt(_cursorIndexOfProStock);
+            }
+            _item = new CartItem(_tmpCart_id,_tmpPro_id,_tmpPro_name,_tmpPro_price,_tmpPro_size,_tmpPro_image,_tmpPro_colour,_tmpPro_colour_code,_tmpPro_total_qty,_tmpPro_total_price,_tmpCartStatus,_tmpPro_code,_tmpPro_weight,_tmpPro_stock);
             _result.add(_item);
           }
           return _result;
@@ -495,6 +529,8 @@ public final class OrderDao_Impl implements OrderDao {
           final int _cursorIndexOfProTotalPrice = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_total_price");
           final int _cursorIndexOfCartStatus = CursorUtil.getColumnIndexOrThrow(_cursor, "cartStatus");
           final int _cursorIndexOfProCode = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_code");
+          final int _cursorIndexOfProWeight = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_weight");
+          final int _cursorIndexOfProStock = CursorUtil.getColumnIndexOrThrow(_cursor, "pro_stock");
           final List<CartItem> _result = new ArrayList<CartItem>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final CartItem _item;
@@ -548,7 +584,19 @@ public final class OrderDao_Impl implements OrderDao {
             _tmpCartStatus = _tmp == null ? null : _tmp != 0;
             final String _tmpPro_code;
             _tmpPro_code = _cursor.getString(_cursorIndexOfProCode);
-            _item = new CartItem(_tmpCart_id,_tmpPro_id,_tmpPro_name,_tmpPro_price,_tmpPro_size,_tmpPro_image,_tmpPro_colour,_tmpPro_colour_code,_tmpPro_total_qty,_tmpPro_total_price,_tmpCartStatus,_tmpPro_code);
+            final Double _tmpPro_weight;
+            if (_cursor.isNull(_cursorIndexOfProWeight)) {
+              _tmpPro_weight = null;
+            } else {
+              _tmpPro_weight = _cursor.getDouble(_cursorIndexOfProWeight);
+            }
+            final Integer _tmpPro_stock;
+            if (_cursor.isNull(_cursorIndexOfProStock)) {
+              _tmpPro_stock = null;
+            } else {
+              _tmpPro_stock = _cursor.getInt(_cursorIndexOfProStock);
+            }
+            _item = new CartItem(_tmpCart_id,_tmpPro_id,_tmpPro_name,_tmpPro_price,_tmpPro_size,_tmpPro_image,_tmpPro_colour,_tmpPro_colour_code,_tmpPro_total_qty,_tmpPro_total_price,_tmpCartStatus,_tmpPro_code,_tmpPro_weight,_tmpPro_stock);
             _result.add(_item);
           }
           return _result;

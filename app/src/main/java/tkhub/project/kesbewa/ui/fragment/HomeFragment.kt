@@ -97,7 +97,8 @@ class HomeFragment : Fragment() {
         viewmodel.productList.observe(this) { value -> }
 
         viewmodel.filterdProductList.observe(viewLifecycleOwner){news ->
-            news.onSuccess {it -> adapter.submitList(it) }
+            news.onSuccess {it -> adapter.submitList(it)
+            }
             news.onFailure {it }
         }
         viewmodel.updateCartCount()

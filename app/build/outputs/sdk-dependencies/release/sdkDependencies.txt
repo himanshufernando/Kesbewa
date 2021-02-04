@@ -445,10 +445,10 @@ library {
   maven_library {
     groupId: "androidx.coordinatorlayout"
     artifactId: "coordinatorlayout"
-    version: "1.1.0-beta01"
+    version: "1.1.0"
   }
   digests {
-    sha256: "[\336k\356\031\032lS\a;e\361\314\310\353\217\375\367uz\355\220u_{\225\f:\314{%R"
+    sha256: "D\251\343\n\277V\257\020%\305*\n\365\006\376\351\304\023\032\245^\375\245/\237\331E\022\021\305\350\313"
   }
 }
 library {
@@ -1035,10 +1035,10 @@ library {
   maven_library {
     groupId: "com.google.android.material"
     artifactId: "material"
-    version: "1.1.0-alpha09"
+    version: "1.1.0"
   }
   digests {
-    sha256: "\265\334\032\370\216;4\224\370\"s\224;\370\336\037i\315\237\336\n7\201u\177\246\351T<\0255\250"
+    sha256: "X\364\373nY\206\354\216\001\2473\352\205\351\337\203\317y\006\016\003)\376\030\253\301\222\331\355\251{&"
   }
 }
 library {
@@ -1459,6 +1459,26 @@ library {
   }
   digests {
     sha256: "u%\217\332a\301&l|V\006\262\227\261\307\r\263]v%\214\321p\301\252\300N\206e\246\325\236"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.github.denzcoskun"
+    artifactId: "ImageSlideshow"
+    version: "0.1.0"
+  }
+  digests {
+    sha256: "\267s\016\220(\344\211\006SCw\267\241r\354\'>\340\017\257\f\260\221\250\215\325\371)sf\353h"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.squareup.picasso"
+    artifactId: "picasso"
+    version: "2.71828"
+  }
+  digests {
+    sha256: "\351\346\263,dW>\331\340\233\205\310\3372\005\260)\337\fo?\017x:\230K\263\373\374\006\350;"
   }
 }
 library {
@@ -2323,6 +2343,18 @@ library_dependencies {
 }
 library_dependencies {
   library_index: 146
+  library_dep_index: 103
+  library_dep_index: 13
+  library_dep_index: 147
+}
+library_dependencies {
+  library_index: 147
+  library_dep_index: 79
+  library_dep_index: 5
+  library_dep_index: 121
+}
+library_dependencies {
+  library_index: 148
 }
 module_dependencies {
   module_name: "base"
@@ -2347,6 +2379,7 @@ module_dependencies {
   dependency_index: 145
   dependency_index: 146
   dependency_index: 83
+  dependency_index: 148
   dependency_index: 85
   dependency_index: 87
   dependency_index: 91

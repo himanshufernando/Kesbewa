@@ -14,6 +14,7 @@ import android.view.inputmethod.EditorInfo
 import android.widget.MediaController
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -38,10 +39,7 @@ import tkhub.project.kesbewa.databinding.FragmentProductDetailBinding
 import tkhub.project.kesbewa.services.Perfrences.AppPrefs
 import tkhub.project.kesbewa.services.network.InternetConnection
 import tkhub.project.kesbewa.ui.activity.home.HomeActivity
-import tkhub.project.kesbewa.ui.adapters.ProductsColorAdapter
-import tkhub.project.kesbewa.ui.adapters.ProductsImagesAdapter
-import tkhub.project.kesbewa.ui.adapters.ProductsLargeImagesAdapter
-import tkhub.project.kesbewa.ui.adapters.ProductsSizeAdapter
+import tkhub.project.kesbewa.ui.adapters.*
 import tkhub.project.kesbewa.viewmodels.home.HomeViewModel
 import java.util.*
 
@@ -59,6 +57,7 @@ class ProductDetailFragment : Fragment() {
     val adapterColor = ProductsColorAdapter()
 
     val adapterLargeImages = ProductsLargeImagesAdapter()
+    val adapterLargeImagesGallery = ProductsLargeImagesGalleryAdapter()
 
     lateinit var media: MediaController
 
@@ -68,11 +67,13 @@ class ProductDetailFragment : Fragment() {
 
     lateinit var dialogStockProductQty: Dialog
 
+
     private val viewmodel: HomeViewModel by viewModels { HomeViewModel.LiveDataVMFactory }
     lateinit var selectedProdect: Products
 
 
     var currentImageItem= 0
+    var currentImageGalItem= 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -96,8 +97,23 @@ class ProductDetailFragment : Fragment() {
 
 
         var bottomSheetBehavior = BottomSheetBehavior.from(binding.root.bottom_sheet_layout)
-
         binding.root.recyclerView_product_large_images.adapter = adapterLargeImages
+
+        binding.root.recyclerView_product_image_gall.adapter = adapterLargeImagesGallery
+
+        adapterLargeImages.setOnItemClickListener(object :
+            ProductsLargeImagesAdapter.ClickListener {
+            override fun onClick(selectedProduct: ProductImage, aView: View) {
+                binding.root.cl_image_gall.visibility = View.VISIBLE
+
+
+
+            }
+        })
+
+
+
+
            binding.root.recyclerView_product_images.adapter = adapter
         binding.root.recyclerView_product_size.adapter = adapterSize
         binding.root.recyclerView_product_color.adapter = adapterColor
@@ -221,10 +237,11 @@ class ProductDetailFragment : Fragment() {
             RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
-                var lastCompletelyVisibleItemPosition =
-                    (recyclerView.layoutManager as LinearLayoutManager?)!!.findLastVisibleItemPosition()
+                var lastCompletelyVisibleItemPosition = (recyclerView.layoutManager as LinearLayoutManager?)!!.findLastVisibleItemPosition()
+
                 var listCount = adapterLargeImages.currentList.size
                 currentImageItem= (lastCompletelyVisibleItemPosition + 1)
+
                 if (currentImageItem == 1) {
                     binding.root.cl_pro_image_left.visibility = View.GONE
                 } else if (currentImageItem == listCount) {
@@ -247,6 +264,49 @@ class ProductDetailFragment : Fragment() {
         binding.root.cl_pro_image_left.setOnClickListener{
             binding.root.recyclerView_product_large_images.smoothScrollToPosition(currentImageItem-2)
         }
+
+
+
+        binding.root.cl_pro_image_bal_cancel.setOnClickListener {
+            binding.root.cl_image_gall.visibility = View.GONE
+
+        }
+
+
+
+        binding.root.recyclerView_product_image_gall.addOnScrollListener(object :
+            RecyclerView.OnScrollListener() {
+            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                super.onScrolled(recyclerView, dx, dy)
+                var lastCompletelyVisibleItemPosition = (recyclerView.layoutManager as LinearLayoutManager?)!!.findLastVisibleItemPosition()
+
+                var listCount = adapterLargeImagesGallery.currentList.size
+                currentImageGalItem= (lastCompletelyVisibleItemPosition + 1)
+
+                if (currentImageGalItem == 1) {
+                    binding.root.cl_pro_image_left_gal.visibility = View.GONE
+                } else if (currentImageGalItem == listCount) {
+                    binding.root.cl_pro_image_right_gal.visibility = View.GONE
+                } else {
+                    if (!binding.root.cl_pro_image_right_gal.isVisible) {
+                        binding.root.cl_pro_image_right_gal.visibility = View.VISIBLE
+                    }
+                    if (!binding.root.cl_pro_image_left_gal.isVisible) {
+                        binding.root.cl_pro_image_left_gal.visibility = View.VISIBLE
+                    }
+                }
+            }
+        })
+
+
+
+        binding.root.cl_pro_image_right_gal.setOnClickListener{
+            binding.root.recyclerView_product_image_gall.smoothScrollToPosition(currentImageGalItem)
+        }
+        binding.root.cl_pro_image_left_gal.setOnClickListener{
+            binding.root.recyclerView_product_image_gall.smoothScrollToPosition(currentImageGalItem-2)
+        }
+
 
 
         return binding.root
@@ -480,6 +540,7 @@ class ProductDetailFragment : Fragment() {
            })
 
 
+        adapterLargeImagesGallery.submitList(productimageList)
         adapterLargeImages.submitList(productimageList)
 
     }

@@ -39,10 +39,22 @@ public abstract class FragmentProductDetailBinding extends ViewDataBinding {
   public final AppCompatTextView appCompatTextView333;
 
   @NonNull
+  public final ConstraintLayout clImageGall;
+
+  @NonNull
+  public final ConstraintLayout clProImageBalCancel;
+
+  @NonNull
   public final ConstraintLayout clProImageLeft;
 
   @NonNull
+  public final ConstraintLayout clProImageLeftGal;
+
+  @NonNull
   public final ConstraintLayout clProImageRight;
+
+  @NonNull
+  public final ConstraintLayout clProImageRightGal;
 
   @NonNull
   public final ConstraintLayout constraintLayout;
@@ -70,6 +82,9 @@ public abstract class FragmentProductDetailBinding extends ViewDataBinding {
 
   @NonNull
   public final AppCompatImageView imageviewNavigation;
+
+  @NonNull
+  public final RecyclerView recyclerViewProductImageGall;
 
   @NonNull
   public final RecyclerView recyclerViewProductImages;
@@ -107,22 +122,28 @@ public abstract class FragmentProductDetailBinding extends ViewDataBinding {
   protected FragmentProductDetailBinding(Object _bindingComponent, View _root, int _localFieldCount,
       AppCompatTextView appCompatTextView, AppCompatTextView appCompatTextView12,
       AppCompatTextView appCompatTextView2, AppCompatTextView appCompatTextView333,
-      ConstraintLayout clProImageLeft, ConstraintLayout clProImageRight,
+      ConstraintLayout clImageGall, ConstraintLayout clProImageBalCancel,
+      ConstraintLayout clProImageLeft, ConstraintLayout clProImageLeftGal,
+      ConstraintLayout clProImageRight, ConstraintLayout clProImageRightGal,
       ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2,
       ConstraintLayout constraintLayoutLoadingGuestusersave, View divider3,
       FloatingActionButton fabCart, Guideline guidelineBottom, AppCompatImageView imageView55,
       ConstraintLayout imageViewCart, AppCompatImageView imageviewNavigation,
-      RecyclerView recyclerViewProductImages, RecyclerView recyclerViewProductLargeImages,
-      RelativeLayout rl1, RelativeLayout rl2, NestedScrollView scrollView,
-      AppCompatTextView textView, TickerView textViewCartCount, AppCompatTextView textviewProCode,
-      YouTubePlayerView youtubePlayerView) {
+      RecyclerView recyclerViewProductImageGall, RecyclerView recyclerViewProductImages,
+      RecyclerView recyclerViewProductLargeImages, RelativeLayout rl1, RelativeLayout rl2,
+      NestedScrollView scrollView, AppCompatTextView textView, TickerView textViewCartCount,
+      AppCompatTextView textviewProCode, YouTubePlayerView youtubePlayerView) {
     super(_bindingComponent, _root, _localFieldCount);
     this.appCompatTextView = appCompatTextView;
     this.appCompatTextView12 = appCompatTextView12;
     this.appCompatTextView2 = appCompatTextView2;
     this.appCompatTextView333 = appCompatTextView333;
+    this.clImageGall = clImageGall;
+    this.clProImageBalCancel = clProImageBalCancel;
     this.clProImageLeft = clProImageLeft;
+    this.clProImageLeftGal = clProImageLeftGal;
     this.clProImageRight = clProImageRight;
+    this.clProImageRightGal = clProImageRightGal;
     this.constraintLayout = constraintLayout;
     this.constraintLayout2 = constraintLayout2;
     this.constraintLayoutLoadingGuestusersave = constraintLayoutLoadingGuestusersave;
@@ -132,6 +153,7 @@ public abstract class FragmentProductDetailBinding extends ViewDataBinding {
     this.imageView55 = imageView55;
     this.imageViewCart = imageViewCart;
     this.imageviewNavigation = imageviewNavigation;
+    this.recyclerViewProductImageGall = recyclerViewProductImageGall;
     this.recyclerViewProductImages = recyclerViewProductImages;
     this.recyclerViewProductLargeImages = recyclerViewProductLargeImages;
     this.rl1 = rl1;

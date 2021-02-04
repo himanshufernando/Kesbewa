@@ -35,6 +35,9 @@ public abstract class ListviewProductLargeImagesBinding extends ViewDataBinding 
   public final AppCompatTextView txt1;
 
   @Bindable
+  protected View.OnClickListener mClickListener;
+
+  @Bindable
   protected View.OnScrollChangeListener mScrollChangeListener;
 
   @Bindable
@@ -50,6 +53,13 @@ public abstract class ListviewProductLargeImagesBinding extends ViewDataBinding 
     this.imageViewProductImageBackground = imageViewProductImageBackground;
     this.mkloaderItemproduct = mkloaderItemproduct;
     this.txt1 = txt1;
+  }
+
+  public abstract void setClickListener(@Nullable View.OnClickListener clickListener);
+
+  @Nullable
+  public View.OnClickListener getClickListener() {
+    return mClickListener;
   }
 
   public abstract void setScrollChangeListener(

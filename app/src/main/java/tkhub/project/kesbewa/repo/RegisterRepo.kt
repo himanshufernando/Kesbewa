@@ -76,8 +76,6 @@ class RegisterRepo(context: Context) {
         userRef?.keepSynced(false)
         var errorSaveUser = NetworkError()
 
-        println("ddddddddddddddddddddddddddddddddddddddddd skdddkdsdsddsdsddsds")
-
 
         when {
             (AppPrefs.checkValidString(finalUser.user_name!!)) -> {
@@ -133,7 +131,7 @@ class RegisterRepo(context: Context) {
 
                 val query: Query =
                     userRef?.orderByChild("user_phone")!!.equalTo(finalUser.user_phone)
-/*
+
                 query.addListenerForSingleValueEvent(object : ValueEventListener {
                     override fun onDataChange(dataSnapshot: DataSnapshot) {
                         if (dataSnapshot.childrenCount == 0L) {
@@ -170,7 +168,7 @@ class RegisterRepo(context: Context) {
                         offer(appPref.errorSomethingWentWrong())
                     }
                 })
-*/
+
 
             }
         }

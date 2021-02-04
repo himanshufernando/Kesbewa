@@ -49,7 +49,7 @@ public class ListviewProductLargeImagesBindingImpl extends ListviewProductLargeI
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x4L;
+                mDirtyFlags = 0x8L;
         }
         requestRebind();
     }
@@ -67,7 +67,10 @@ public class ListviewProductLargeImagesBindingImpl extends ListviewProductLargeI
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
-        if (BR.item == variableId) {
+        if (BR.clickListener == variableId) {
+            setClickListener((android.view.View.OnClickListener) variable);
+        }
+        else if (BR.item == variableId) {
             setItem((tkhub.project.kesbewa.data.model.ProductImage) variable);
         }
         else if (BR.scrollChangeListener == variableId) {
@@ -79,10 +82,18 @@ public class ListviewProductLargeImagesBindingImpl extends ListviewProductLargeI
             return variableSet;
     }
 
+    public void setClickListener(@Nullable android.view.View.OnClickListener ClickListener) {
+        this.mClickListener = ClickListener;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.clickListener);
+        super.requestRebind();
+    }
     public void setItem(@Nullable tkhub.project.kesbewa.data.model.ProductImage Item) {
         this.mItem = Item;
         synchronized(this) {
-            mDirtyFlags |= 0x1L;
+            mDirtyFlags |= 0x2L;
         }
         notifyPropertyChanged(BR.item);
         super.requestRebind();
@@ -105,10 +116,13 @@ public class ListviewProductLargeImagesBindingImpl extends ListviewProductLargeI
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
+        android.view.View.OnClickListener clickListener = mClickListener;
         tkhub.project.kesbewa.data.model.ProductImage item = mItem;
         java.lang.String itemImgUrl = null;
 
-        if ((dirtyFlags & 0x5L) != 0) {
+        if ((dirtyFlags & 0x9L) != 0) {
+        }
+        if ((dirtyFlags & 0xaL) != 0) {
 
 
 
@@ -118,11 +132,16 @@ public class ListviewProductLargeImagesBindingImpl extends ListviewProductLargeI
                 }
         }
         // batch finished
-        if ((dirtyFlags & 0x5L) != 0) {
+        if ((dirtyFlags & 0xaL) != 0) {
             // api target 1
 
             tkhub.project.kesbewa.ui.adapters.CustomBindingAdapter.img_url(this.imageViewProductImage, itemImgUrl);
             tkhub.project.kesbewa.ui.adapters.CustomBindingAdapter.img_url_cover(this.imageViewProductImageBackground, itemImgUrl);
+        }
+        if ((dirtyFlags & 0x9L) != 0) {
+            // api target 1
+
+            this.mboundView0.setOnClickListener(clickListener);
         }
     }
     // Listener Stub Implementations
@@ -130,9 +149,10 @@ public class ListviewProductLargeImagesBindingImpl extends ListviewProductLargeI
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): item
-        flag 1 (0x2L): scrollChangeListener
-        flag 2 (0x3L): null
+        flag 0 (0x1L): clickListener
+        flag 1 (0x2L): item
+        flag 2 (0x3L): scrollChangeListener
+        flag 3 (0x4L): null
     flag mapping end*/
     //end
 }

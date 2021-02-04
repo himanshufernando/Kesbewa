@@ -128,9 +128,12 @@ class CartRepo(val dataDao: OrderDao, context: Context) {
                             var usercode = finalUser.user_code
                             var delimiter = "-"
                             val parts = usercode?.split(delimiter)
+
                             var orderCode =
                                 "O" + value.toString() + (parts?.get(0)) + "-" + ((1..1000).random()
                                     .toString())
+
+
                             orderDetails.order_code = orderCode
 
 

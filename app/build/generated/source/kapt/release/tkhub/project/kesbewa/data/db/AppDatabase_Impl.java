@@ -27,12 +27,12 @@ public final class AppDatabase_Impl extends AppDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(3) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `carttable` (`cart_id` INTEGER, `pro_id` INTEGER, `pro_name` TEXT, `pro_price` REAL, `pro_size` TEXT, `pro_image` TEXT, `pro_colour` TEXT, `pro_colour_code` TEXT, `pro_total_qty` INTEGER, `pro_total_price` REAL, `cartStatus` INTEGER, `pro_code` TEXT, PRIMARY KEY(`cart_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `carttable` (`cart_id` INTEGER, `pro_id` INTEGER, `pro_name` TEXT, `pro_price` REAL, `pro_size` TEXT, `pro_image` TEXT, `pro_colour` TEXT, `pro_colour_code` TEXT, `pro_total_qty` INTEGER, `pro_total_price` REAL, `cartStatus` INTEGER, `pro_code` TEXT, `pro_weight` REAL, `pro_stock` INTEGER, PRIMARY KEY(`cart_id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'cca89b2524eb7d3303d079a758ce8413')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '05de60b4125dda540495c161532f0816')");
       }
 
       @Override
@@ -76,7 +76,7 @@ public final class AppDatabase_Impl extends AppDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsCarttable = new HashMap<String, TableInfo.Column>(12);
+        final HashMap<String, TableInfo.Column> _columnsCarttable = new HashMap<String, TableInfo.Column>(14);
         _columnsCarttable.put("cart_id", new TableInfo.Column("cart_id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCarttable.put("pro_id", new TableInfo.Column("pro_id", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCarttable.put("pro_name", new TableInfo.Column("pro_name", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -89,6 +89,8 @@ public final class AppDatabase_Impl extends AppDatabase {
         _columnsCarttable.put("pro_total_price", new TableInfo.Column("pro_total_price", "REAL", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCarttable.put("cartStatus", new TableInfo.Column("cartStatus", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCarttable.put("pro_code", new TableInfo.Column("pro_code", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCarttable.put("pro_weight", new TableInfo.Column("pro_weight", "REAL", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCarttable.put("pro_stock", new TableInfo.Column("pro_stock", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysCarttable = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesCarttable = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoCarttable = new TableInfo("carttable", _columnsCarttable, _foreignKeysCarttable, _indicesCarttable);
@@ -100,7 +102,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "cca89b2524eb7d3303d079a758ce8413", "101c55d524276bb70746b510f88e8f4c");
+    }, "05de60b4125dda540495c161532f0816", "fbeb46f893ec5e159f335b2137935741");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

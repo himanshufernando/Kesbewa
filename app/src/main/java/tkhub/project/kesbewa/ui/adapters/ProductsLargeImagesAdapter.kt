@@ -15,16 +15,28 @@ import tkhub.project.kesbewa.databinding.ListviewProductsBinding
 
 class ProductsLargeImagesAdapter : ListAdapter<ProductImage, RecyclerView.ViewHolder>(ProductLargeImageDiffCallback()) {
 
+    lateinit var mClickListener: ClickListener
+
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val proImages = getItem(position)
         (holder as ProductLargeImageViewHolder).bind(proImages)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return ProductLargeImageViewHolder(ListviewProductLargeImagesBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return ProductLargeImageViewHolder(ListviewProductLargeImagesBinding.inflate(LayoutInflater.from(parent.context), parent, false),mClickListener)
+    }
+    fun setOnItemClickListener(aClickListener: ClickListener) {
+        mClickListener = aClickListener
+    }
+    interface ClickListener {
+        fun onClick(selectedProductImage: ProductImage, aView: View)
     }
 
-    class ProductLargeImageViewHolder(private val binding: ListviewProductLargeImagesBinding) :
+    class ProductLargeImageViewHolder(private val binding: ListviewProductLargeImagesBinding,var mClickListener: ClickListener) :
         RecyclerView.ViewHolder(binding.root) {
+
+        init {
+            binding.setClickListener { binding.item?.let { selectedProduct -> mClickListener.onClick(selectedProduct,it) } }
+        }
         fun bind(proimages: ProductImage) {
             binding.apply { item = proimages
                 executePendingBindings()

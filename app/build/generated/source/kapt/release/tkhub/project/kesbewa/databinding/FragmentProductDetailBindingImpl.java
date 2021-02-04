@@ -12,7 +12,7 @@ public class FragmentProductDetailBindingImpl extends FragmentProductDetailBindi
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(27);
+        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(32);
         sIncludes.setIncludes(0, 
             new String[] {"dialog_bottomsheet_cart"},
             new int[] {12},
@@ -32,6 +32,11 @@ public class FragmentProductDetailBindingImpl extends FragmentProductDetailBindi
         sViewsWithIds.put(R.id.rl_2, 24);
         sViewsWithIds.put(R.id.youtube_player_view, 25);
         sViewsWithIds.put(R.id.divider3, 26);
+        sViewsWithIds.put(R.id.cl_image_gall, 27);
+        sViewsWithIds.put(R.id.recyclerView_product_image_gall, 28);
+        sViewsWithIds.put(R.id.cl_pro_image_right_gal, 29);
+        sViewsWithIds.put(R.id.cl_pro_image_left_gal, 30);
+        sViewsWithIds.put(R.id.cl_pro_image_bal_cancel, 31);
     }
     // views
     @NonNull
@@ -137,7 +142,7 @@ public class FragmentProductDetailBindingImpl extends FragmentProductDetailBindi
     };
 
     public FragmentProductDetailBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 27, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 32, sIncludes, sViewsWithIds));
     }
     private FragmentProductDetailBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 4
@@ -145,8 +150,12 @@ public class FragmentProductDetailBindingImpl extends FragmentProductDetailBindi
             , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[27]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[31]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[19]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[30]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[18]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[29]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[16]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[13]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[11]
@@ -156,6 +165,7 @@ public class FragmentProductDetailBindingImpl extends FragmentProductDetailBindi
             , (androidx.appcompat.widget.AppCompatImageView) bindings[14]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
             , (androidx.appcompat.widget.AppCompatImageView) bindings[15]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[28]
             , (androidx.recyclerview.widget.RecyclerView) bindings[20]
             , (androidx.recyclerview.widget.RecyclerView) bindings[17]
             , (android.widget.RelativeLayout) bindings[23]

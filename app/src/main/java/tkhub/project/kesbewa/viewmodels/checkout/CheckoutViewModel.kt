@@ -247,6 +247,23 @@ class CheckoutViewModel(dataDao: OrderDao, context: Context) : ViewModel() {
 
 
 
+        var totKellow = 0
+        for(item in cart){
+            var itemkm = item.pro_weight!!* item.pro_total_qty!!
+            totKellow = (totKellow+ itemkm).toInt()
+        }
+
+        var deliverChargesPerkellow  =0.0
+        var additnalKg = totKellow/1000.toInt()
+
+
+        if(additnalKg!=0){
+            deliverChargesPerkellow = (additnalKg * 50).toDouble()
+        }
+
+      // var deliverChargesPerkellow = ((totKellow/1000).toInt()-1) * 50
+
+
         if( dispatchType.value == appPref.KEY_DISPATCH_STORE){
             isDeliveryChargesTextVisible.set(false)
             isDeliveryChargesVisible.set(false)
@@ -255,7 +272,16 @@ class CheckoutViewModel(dataDao: OrderDao, context: Context) : ViewModel() {
 
             isDeliveryChargesTextVisible.set(true)
             isDeliveryChargesVisible.set(true)
-            textDelivery.set("%.2f".format(finalCheckoutAmount.deliveryCharges))
+
+
+            var delCharges = finalCheckoutAmount.deliveryCharges
+
+            if(delCharges !=0.0){
+                delCharges += deliverChargesPerkellow
+            }
+
+
+            textDelivery.set("%.2f".format(delCharges))
         }
 
 

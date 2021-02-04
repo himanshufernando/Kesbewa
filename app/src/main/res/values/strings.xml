@@ -154,4 +154,8 @@
     </string-array>
 
     <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="plastic_pollution">Plastic pollution is recognized as a severe anthropogenic issue in the coastal and marine ecosystems across the world. Sea turtles are affected by plastic during every stage of their life</string>
+    <string name="sea_turtles">They crawl through plastic on the way to the ocean as hatchlings, swim through it while migrating, confuse it for jellyfish (one of their favorite foods), and then crawl back through it as adults. Hundreds of thousands of sea turtles, whales, and other marine mammals, and more than 1 million seabirds die each year from ocean pollution and ingestion or entanglement in marine debris.</string>
+    <string name="we_are_group"><![CDATA[“ We are a group who came together under the brand “ Kesbewa ”, with an ambition to minimize the polythene & plastic usage of the Sri Lankan consumers by introducing compostable products to the market which can substitute polythene & plastic in the longer run. ”]]></string>
+    <string name="to_preserve_the_costal"><![CDATA[To preserve the costal line by helping people to minimize the usage of polythene & plastics and providing them with compostable substitute products.!]]></string>
 </resources>
