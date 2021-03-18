@@ -106,8 +106,6 @@ class ProductDetailFragment : Fragment() {
             override fun onClick(selectedProduct: ProductImage, aView: View) {
                 binding.root.cl_image_gall.visibility = View.VISIBLE
 
-
-
             }
         })
 

@@ -27,13 +27,18 @@ import androidx.navigation.fragment.NavHostFragment
 
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.fragment_home.view.imageview_navigation
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 import tkhub.project.kesbewa.R
 import tkhub.project.kesbewa.data.model.NetworkError
 import tkhub.project.kesbewa.data.model.Products
+import tkhub.project.kesbewa.data.model.YoutubeVideoItem
 import tkhub.project.kesbewa.data.responsmodel.KesbewaResult
 import tkhub.project.kesbewa.databinding.FragmentHomeBinding
 import tkhub.project.kesbewa.services.Perfrences.AppPrefs
+import tkhub.project.kesbewa.services.Perfrences.YoutubeConnector
 import tkhub.project.kesbewa.services.network.InternetConnection
 import tkhub.project.kesbewa.ui.activity.home.HomeActivity
 import tkhub.project.kesbewa.ui.adapters.ProductsAdapter
@@ -52,7 +57,7 @@ class HomeFragment : Fragment() {
 
     private val adapter = ProductsAdapter()
 
-
+    lateinit var youtubeconnector: YoutubeConnector
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -106,11 +111,28 @@ class HomeFragment : Fragment() {
             viewmodel.updateCartCountUI(count)
         }
 
+        youtubeconnector = YoutubeConnector()
+
+    /*    GlobalScope.launch(Dispatchers.Default) {
+            youtubeSearchFragment(youtubeconnector.search("Mage Hita"))
+        }
+*/
 
 
 
         return binding.root
     }
+    private fun youtubeSearchFragment(searchlist: List<YoutubeVideoItem>) {
+        activity?.runOnUiThread(java.lang.Runnable {
+
+            println("ssssssssssssssssssssss searchlist : "+searchlist)
+
+
+        })
+
+    }
+
+
 
     override fun onResume() {
         super.onResume()

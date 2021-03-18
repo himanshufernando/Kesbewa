@@ -222,6 +222,7 @@ class HomeViewModel(dataDao: OrderDao, context: Context) : ViewModel() {
         }
 
         textProductDetails.set(discription)
+
         selectedProduct.value = pro
 
     }

@@ -1482,6 +1482,126 @@ library {
   }
 }
 library {
+  maven_library {
+    groupId: "com.google.apis"
+    artifactId: "google-api-services-youtube"
+    version: "v3-rev192-1.23.0"
+  }
+  digests {
+    sha256: "O\224\266\023\2134\316W\267\023\207\365\365\256\3221cq\363eK\274\rk1\340\324\375_\256\226f"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.api-client"
+    artifactId: "google-api-client"
+    version: "1.23.0"
+  }
+  digests {
+    sha256: "5}\340\001}C\234\002\032j\230\324\2168\n%\247\t\334\233\305\016K8\306\253\204\tNo.\204"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.oauth-client"
+    artifactId: "google-oauth-client"
+    version: "1.23.0"
+  }
+  digests {
+    sha256: "H\257\036\357\356\vn\236\023\037\310\306Z\221\337\226\006AD\306\b\030~CD\353~O\202\001\000j"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.http-client"
+    artifactId: "google-http-client-jackson2"
+    version: "1.23.0"
+  }
+  digests {
+    sha256: "%\'\351\321\352\304\202+\251Oo\377\344\360\266\326\347W\344\243>\316T\006gO`\267\366IK\006"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.guava"
+    artifactId: "guava-jdk5"
+    version: "17.0"
+  }
+  digests {
+    sha256: "Y\277EeG\266\335\243\316\331h\313V\367\362\323\341Dt\342\336)`\243,G\343\034\036Ela"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.http-client"
+    artifactId: "google-http-client"
+    version: "1.23.0"
+  }
+  digests {
+    sha256: "\252\265=\260\355\026\001\257\236\"\356m+\023\206iv\223V\377\210`+\2636\333\307\356T\t\020\255"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.code.findbugs"
+    artifactId: "jsr305"
+    version: "1.3.9"
+  }
+  digests {
+    sha256: "\220W!\240\356\251\n\201SJ\273~\346\357N\242\345\346E\372\035\357\n\\\330\204\002\337\033F\311\355"
+  }
+}
+library {
+  maven_library {
+    groupId: "org.apache.httpcomponents"
+    artifactId: "httpclient"
+    version: "4.0.1"
+  }
+  digests {
+    sha256: "u%\226\353\334|\232\345\331\246U\336;\260m\a\2074g\232\235\3423!\333\362\204\356DV<\003"
+  }
+}
+library {
+  maven_library {
+    groupId: "org.apache.httpcomponents"
+    artifactId: "httpcore"
+    version: "4.0.1"
+  }
+  digests {
+    sha256: ";k\371*\377\250]Ai\251\025G\316<p\223\355\231;A\255-\370\004i\374v\212\320\036kk"
+  }
+}
+library {
+  maven_library {
+    groupId: "commons-logging"
+    artifactId: "commons-logging"
+    version: "1.1.1"
+  }
+  digests {
+    sha256: "\316o\221<\255\037\r\263\252\327\001\206\326\\[\307\377\314\232\231\343\376\216\v\023s\022\201\237|6/"
+  }
+}
+library {
+  maven_library {
+    groupId: "commons-codec"
+    artifactId: "commons-codec"
+    version: "1.3"
+  }
+  digests {
+    sha256: "\033\257\322\354\342\350\215\264\315\3705\247\370\360\336e\372\265\261\024yw\245\334\305\233|\033\214oP\200"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.fasterxml.jackson.core"
+    artifactId: "jackson-core"
+    version: "2.1.3"
+  }
+  digests {
+    sha256: "uA\204\002#E\200\f-\006n\316\352\362\367\250\212|*\256\256#\353\034v\357Y\210T\252\221W"
+  }
+}
+library {
   digests {
     sha256: "\324\236\177`\211\314 \016\0024)\n[\267U\326\223\353\364\223\364\347n\267\".\\\257\246\201\367\236"
   }
@@ -2355,6 +2475,37 @@ library_dependencies {
 }
 library_dependencies {
   library_index: 148
+  library_dep_index: 149
+}
+library_dependencies {
+  library_index: 149
+  library_dep_index: 150
+  library_dep_index: 151
+  library_dep_index: 152
+}
+library_dependencies {
+  library_index: 150
+  library_dep_index: 153
+  library_dep_index: 154
+}
+library_dependencies {
+  library_index: 153
+  library_dep_index: 154
+  library_dep_index: 155
+}
+library_dependencies {
+  library_index: 155
+  library_dep_index: 156
+  library_dep_index: 157
+  library_dep_index: 158
+}
+library_dependencies {
+  library_index: 151
+  library_dep_index: 153
+  library_dep_index: 159
+}
+library_dependencies {
+  library_index: 160
 }
 module_dependencies {
   module_name: "base"
@@ -2383,6 +2534,7 @@ module_dependencies {
   dependency_index: 85
   dependency_index: 87
   dependency_index: 91
+  dependency_index: 160
   dependency_index: 97
   dependency_index: 34
   dependency_index: 35

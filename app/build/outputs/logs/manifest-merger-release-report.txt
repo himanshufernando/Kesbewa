@@ -45,7 +45,7 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Himanshu\.gradle\cac
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\ab28392733417773f939b00da721642b\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services-auth:18.0.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\9dff3ddc9d47cc2ef9f8ff86eb660477\jetified-play-services-auth-18.0.0\AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\b4cc08ff9cc290de7f842b94ee3ebd50\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:2:1-24:12
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.databinding:viewbinding:4.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\a788d8e49deb847a0de41369755d7e66\jetified-viewbinding-4.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\d48008d753e2d71efc82c0842ce1fe84\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\fe6febef9e8751fdba46c5e018c1ab2f\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
@@ -227,8 +227,8 @@ MERGED from [com.google.android.gms:play-services-auth:18.0.0] C:\Users\Himanshu
 MERGED from [com.google.android.gms:play-services-auth:18.0.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\9dff3ddc9d47cc2ef9f8ff86eb660477\jetified-play-services-auth-18.0.0\AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\b4cc08ff9cc290de7f842b94ee3ebd50\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\b4cc08ff9cc290de7f842b94ee3ebd50\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:14:5-22:19
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\d48008d753e2d71efc82c0842ce1fe84\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\d48008d753e2d71efc82c0842ce1fe84\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
 MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\1e374d2a686bfc43dc1b825265d303a1\jetified-firebase-iid-20.0.2\AndroidManifest.xml:28:5-45:19
@@ -469,8 +469,8 @@ MERGED from [com.google.android.gms:play-services-auth:18.0.0] C:\Users\Himanshu
 MERGED from [com.google.android.gms:play-services-auth:18.0.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\9dff3ddc9d47cc2ef9f8ff86eb660477\jetified-play-services-auth-18.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\b4cc08ff9cc290de7f842b94ee3ebd50\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\b4cc08ff9cc290de7f842b94ee3ebd50\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:4.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\a788d8e49deb847a0de41369755d7e66\jetified-viewbinding-4.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:4.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\a788d8e49deb847a0de41369755d7e66\jetified-viewbinding-4.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\d48008d753e2d71efc82c0842ce1fe84\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
@@ -774,13 +774,13 @@ ADDED from [com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\Himanshu\.
 	android:name
 		ADDED from [com.google.firebase:firebase-crashlytics:17.3.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\b4cc08ff9cc290de7f842b94ee3ebd50\jetified-firebase-crashlytics-17.3.0\AndroidManifest.xml:19:17-115
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\d48008d753e2d71efc82c0842ce1fe84\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
 	android:authorities

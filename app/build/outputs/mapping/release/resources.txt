@@ -270,6 +270,13 @@ Referenced Strings:
   ADD
   ADDRESSSAVESUCCESS
   ALL
+  ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER
+  ALLOW_COMMENTS
+  ALLOW_NON_NUMERIC_NUMBERS
+  ALLOW_NUMERIC_LEADING_ZEROS
+  ALLOW_SINGLE_QUOTES
+  ALLOW_UNQUOTED_CONTROL_CHARS
+  ALLOW_UNQUOTED_FIELD_NAMES
   ALWAYS
   ANDROID
   ANDROID_FIREBASE
@@ -295,6 +302,9 @@ Referenced Strings:
   ATTEMPT_MIGRATION
   AUTH_ERROR
   AUTOMATIC
+  AUTO_CLOSE_JSON_CONTENT
+  AUTO_CLOSE_SOURCE
+  AUTO_CLOSE_TARGET
   AbstractProgress
   Accept
   AccountAccessor
@@ -396,6 +406,7 @@ Referenced Strings:
   CANCEL
   CANCELED
   CANCEL_BUTTON_TAG
+  CANONICALIZE_FIELD_NAMES
   CD
   CDMA
   CENTER
@@ -583,9 +594,7 @@ Referenced Strings:
   DrawableToBitmap
   DrawerLayout
   DynamicInstallManager
-  DynamiteLoaderClassLoader.class
   DynamiteModule
-  DynamiteModule.class
   EA
   EAN
   EC
@@ -627,6 +636,7 @@ Referenced Strings:
   EPRCE
   ERROR
   ESA
+  ESCAPE_NON_ASCII
   ESNCV
   ESUG
   ET::
@@ -692,6 +702,7 @@ Referenced Strings:
   FLOAT_LIST
   FLOAT_LIST_PACKED
   FLOW_CONTROL_ERROR
+  FLUSH_PASSED_TO_STREAM
   FL_LEGACY_V1
   FNumber
   FOREGROUND
@@ -716,8 +727,6 @@ Referenced Strings:
   FirebaseDatabaseWorker
   FirebaseInitProvider
   FirebaseInstanceId
-  FirebaseInstanceId.class
-  FirebaseInstanceIdReceiver.class
   FirebaseMessaging
   FirebasePerfSharedPrefs
   FirebasePerformance
@@ -878,6 +887,7 @@ Referenced Strings:
   IDENTITY
   IFD
   IGNORE_CACHE_EXPIRATION
+  IGNORE_CASE
   II
   III
   ILA_X1
@@ -904,6 +914,7 @@ Referenced Strings:
   INTEGER
   INTERNAL_ERROR
   INTERNAL_SERVER_ERROR
+  INTERN_FIELD_NAMES
   INTERRUPTED
   INVALID_ACCOUNT
   INVALID_PARAMETER_IN_REQUEST
@@ -964,7 +975,6 @@ Referenced Strings:
   LICENSE_CHECK_FAILED
   LOC
   LOCAL
-  LOCK
   LOGGED
   LOGGEDFAIL
   LONG
@@ -1045,7 +1055,6 @@ Referenced Strings:
   MapOptions
   MapToolbarEnabled
   MapType
-  MapsInitializer.class
   Matale
   Matara
   MaterialButton
@@ -1065,7 +1074,6 @@ Referenced Strings:
   MergedDataBinderMapper
   MessageProducer
   MessengerIpcClient
-  MessengerIpcClient.class
   MetadataValueReader
   MeteringMode
   MinZoomPreference
@@ -1271,6 +1279,8 @@ Referenced Strings:
   Puttalam
   QUALITY
   QUIC
+  QUOTE_FIELD_NAMES
+  QUOTE_NON_NUMERIC_NUMBERS
   QueryDispatcher
   R.styleable.DynamicActivityNavigator
   R.styleable.DynamicFragmentNavigator
@@ -1479,6 +1489,7 @@ Referenced Strings:
   ScrollGesturesEnabled
   ScrollGesturesEnabledDuringRotateOrZoom
   SearchView
+  SearchYoutube
   SeekBar
   SendQueued
   SensingMethod
@@ -1865,9 +1876,9 @@ Referenced Strings:
   WINDOW_UPDATE
   WRAP_CONTENT
   WRITE_AHEAD_LOGGING
+  WRITE_NUMBERS_AS_STRINGS
   WRITE_ONLY
   WakeLock
-  WakeLockHolder.syncObject
   WakeLockTracker
   Wakelock
   Warning
@@ -2222,6 +2233,7 @@ Referenced Strings:
   app_ver_name
   appcompat_skip_skip
   appid
+  application
   application/json
   applicationBuild
   applicationContext
@@ -2268,6 +2280,7 @@ Referenced Strings:
   backoff_end_time_in_millis
   baseAddress
   baseKey
+  batch/youtube/v3
   batched
   batteryLevel
   batteryVelocity
@@ -2661,7 +2674,6 @@ Referenced Strings:
   connectionPool
   connectionSpec
   connectionSpecs
-  connectionStatus
   connection_idle
   connectivity
   connectivityManager.allNetworks
@@ -3173,6 +3185,7 @@ Referenced Strings:
   https://reports.crashlytics.com/spi/v...
   https://update.crashlytics.com/spi/v1...
   https://update.crashlytics.com/spi/v1...
+  https://www.googleapis.com/
   https://www.googleapis.com/auth/games
   https://www.googleapis.com/auth/games...
   https://www.youtube.com
@@ -3280,6 +3293,7 @@ Referenced Strings:
   java.lang.annotation.Annotation
   java.lang.module.ModuleDescriptor
   java.specification.version
+  java.util.Arrays$ArrayList
   java.util.Collection
   java.util.Iterator
   java.util.List
@@ -3445,7 +3459,6 @@ Referenced Strings:
   locationResult.lastLocation
   locationServices
   locationSettings
-  lock
   lock.tmp
   log
   logEvent
@@ -3475,15 +3488,12 @@ Referenced Strings:
   mH
   mIsChildViewEnabled
   mLayoutSuppressed
-  mLk
-  mLock
   mMainThread
   mNextServedView
   mOnKeyListener
   mOverlapAnchor
   mResourcesImpl
   mServedView
-  mServiceBrokerLock
   mToken
   mViewFlags
   mainDispatcher
@@ -3917,7 +3927,6 @@ Referenced Strings:
   resourceId_
   resources
   response
-  responseCallbacks
   responseContentType_
   responseHeaders
   responsePayloadBytes_
@@ -3954,12 +3963,7 @@ Referenced Strings:
   rw
   rwd
   s
-  sAllClients
-  sCache
   sClassLoader
-  sInstance
-  sLk
-  sLock
   save_legacy_configs
   scale
   scaleX
@@ -4163,7 +4167,6 @@ Referenced Strings:
   textservices
   that
   theUnsafe
-  this
   threads
   throwable
   throwableClass.methods
@@ -4394,6 +4397,7 @@ Referenced Strings:
   youTubePlayerDOM
   youTubePlayerInitListener
   youTubePlayerView.context
+  youtube/v3/
   zip
   zoom
   zzbb
@@ -5316,9 +5320,9 @@ Marking styleable:ViewStubCompat:-1 used because its prefix matches string pool 
 Marking id:none:2131362225 used because its prefix matches string pool constant none
 Marking string:gcm_defaultSenderId:2131951702 used because its prefix matches string pool constant gcm
 Marking id:outline:2131362235 used because its prefix matches string pool constant out
-Marking string:order_note:2131951795 used because its prefix matches string pool constant order_note
 Marking string:promo_code:2131951810 used because its prefix matches string pool constant promo
 Marking string:promotions:2131951811 used because its prefix matches string pool constant promo
+Marking string:order_note:2131951795 used because its prefix matches string pool constant order_note
 Marking string:delivery_charges:2131951690 used because its prefix matches string pool constant delivery_charges
 Marking id:date_picker_actions:2131361995 used because its prefix matches string pool constant date
 Marking attr:data:2130968806 used because its prefix matches string pool constant data
@@ -8895,105 +8899,133 @@ anim:fragment_close_enter:2130771998,
    attr:android_theme:-1,
    attr:android_inflatedId:-1,
    attr:android_borderlessButtonStyle:-1
-Skipped unused resource res/anim/abc_fade_in.xml: 388 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_fade_out.xml: 388 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_in_bottom.xml: 396 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_in_top.xml: 396 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_out_bottom.xml: 396 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/abc_slide_out_top.xml: 396 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/design_snackbar_in.xml: 312 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/design_snackbar_out.xml: 312 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/mtrl_bottom_sheet_slide_in.xml: 616 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/mtrl_bottom_sheet_slide_out.xml: 616 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/mtrl_card_lowers_interpolator.xml: 400 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/nav_default_enter_anim.xml: 460 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/nav_default_exit_anim.xml: 460 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/nav_default_pop_enter_anim.xml: 460 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim/nav_default_pop_exit_anim.xml: 460 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim-v21/mtrl_bottom_sheet_slide_in.xml: 616 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/anim-v21/mtrl_bottom_sheet_slide_out.xml: 616 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator/mtrl_card_state_list_anim.xml: 1168 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator-v19/mtrl_card_state_list_anim.xml: 1208 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator/mtrl_extended_fab_change_size_motion_spec.xml: 640 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator/mtrl_extended_fab_hide_motion_spec.xml: 608 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator/mtrl_extended_fab_show_motion_spec.xml: 820 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator/mtrl_extended_fab_state_list_animator.xml: 2724 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator/mtrl_fab_hide_motion_spec.xml: 796 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/animator/mtrl_fab_show_motion_spec.xml: 796 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/common_google_signin_btn_text_dark.xml: 712 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/common_google_signin_btn_text_light.xml: 712 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/common_google_signin_btn_tint.xml: 464 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/material_on_background_disabled.xml: 376 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/material_on_background_emphasis_high_type.xml: 376 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/material_on_background_emphasis_medium.xml: 376 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/material_on_primary_disabled.xml: 376 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/material_on_primary_emphasis_high_type.xml: 376 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/material_on_primary_emphasis_medium.xml: 376 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_bottom_nav_colored_item_tint.xml: 520 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_bottom_nav_colored_ripple_color.xml: 948 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_bottom_nav_item_tint.xml: 520 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_bottom_nav_ripple_color.xml: 1672 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_btn_stroke_color_selector.xml: 520 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_card_view_foreground.xml: 788 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_card_view_ripple.xml: 768 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_choice_chip_background_color.xml: 848 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_choice_chip_ripple_color.xml: 948 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_choice_chip_text_color.xml: 808 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_error.xml: 464 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_extended_fab_bg_color_selector.xml: 500 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_extended_fab_ripple_color.xml: 948 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_extended_fab_text_color_selector.xml: 500 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_fab_ripple_color.xml: 808 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_filled_icon_tint.xml: 644 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_filled_stroke_color.xml: 788 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_indicator_text_color.xml: 520 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_navigation_item_background_color.xml: 644 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_navigation_item_icon_tint.xml: 624 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_navigation_item_text_color.xml: 624 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_on_primary_text_btn_text_color_selector.xml: 500 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_outlined_icon_tint.xml: 644 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_outlined_stroke_color.xml: 788 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_popupmenu_overlay_color.xml: 376 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_tabs_colored_ripple_color.xml: 948 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_tabs_icon_color_selector.xml: 500 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_tabs_icon_color_selector_colored.xml: 500 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/color/mtrl_tabs_ripple_color.xml: 1672 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/abc_fade_in.xml: 541 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_fade_out.xml: 541 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_in_bottom.xml: 547 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_in_top.xml: 548 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_out_bottom.xml: 547 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_slide_out_top.xml: 548 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/design_snackbar_in.xml: 234 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/design_snackbar_out.xml: 234 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/mtrl_bottom_sheet_slide_in.xml: 726 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/mtrl_bottom_sheet_slide_out.xml: 704 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/mtrl_card_lowers_interpolator.xml: 400 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/nav_default_enter_anim.xml: 555 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/nav_default_exit_anim.xml: 555 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/nav_default_pop_enter_anim.xml: 555 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/nav_default_pop_exit_anim.xml: 555 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim-v21/mtrl_bottom_sheet_slide_in.xml: 710 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim-v21/mtrl_bottom_sheet_slide_out.xml: 710 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator/mtrl_card_state_list_anim.xml: 1816 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator-v19/mtrl_card_state_list_anim.xml: 1961 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator/mtrl_extended_fab_change_size_motion_spec.xml: 923 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator/mtrl_extended_fab_hide_motion_spec.xml: 723 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator/mtrl_extended_fab_show_motion_spec.xml: 1410 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator/mtrl_extended_fab_state_list_animator.xml: 6156 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator/mtrl_fab_hide_motion_spec.xml: 1337 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/animator/mtrl_fab_show_motion_spec.xml: 1336 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/common_google_signin_btn_text_dark.xml: 1164 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/common_google_signin_btn_text_light.xml: 1172 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/common_google_signin_btn_tint.xml: 440 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/material_on_background_disabled.xml: 383 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/material_on_background_emphasis_high_type.xml: 385 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/material_on_background_emphasis_medium.xml: 379 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/material_on_primary_disabled.xml: 377 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/material_on_primary_emphasis_high_type.xml: 379 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/material_on_primary_emphasis_medium.xml: 373 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_bottom_nav_colored_item_tint.xml: 617 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_bottom_nav_colored_ripple_color.xml: 1624 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_bottom_nav_item_tint.xml: 613 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_bottom_nav_ripple_color.xml: 3584 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_btn_stroke_color_selector.xml: 621 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_card_view_foreground.xml: 1068 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_card_view_ripple.xml: 1000 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_choice_chip_background_color.xml: 1417 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_choice_chip_ripple_color.xml: 1978 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_choice_chip_text_color.xml: 1264 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_error.xml: 452 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_extended_fab_bg_color_selector.xml: 542 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_extended_fab_ripple_color.xml: 1644 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_extended_fab_text_color_selector.xml: 546 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_fab_ripple_color.xml: 1546 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_filled_icon_tint.xml: 848 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_filled_stroke_color.xml: 1166 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_indicator_text_color.xml: 619 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_navigation_item_background_color.xml: 852 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_navigation_item_icon_tint.xml: 768 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_navigation_item_text_color.xml: 768 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_on_primary_text_btn_text_color_selector.xml: 560 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_outlined_icon_tint.xml: 847 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_outlined_stroke_color.xml: 1153 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_popupmenu_overlay_color.xml: 327 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_tabs_colored_ripple_color.xml: 1624 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_tabs_icon_color_selector.xml: 539 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_tabs_icon_color_selector_colored.xml: 543 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color/mtrl_tabs_ripple_color.xml: 3584 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/bc_img.jpg: 26134 bytes (replaced with small dummy file of size 0 bytes)
-Skipped unused resource res/drawable/circle_shape_white.xml: 664 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_dark.xml: 588 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_focused.xml: 892 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_normal.xml: 548 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_disabled.xml: 1132 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_light.xml: 588 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_light_focused.xml: 892 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_light_normal.xml: 548 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_dark.xml: 588 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_dark_focused.xml: 892 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_dark_normal.xml: 584 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_disabled.xml: 1152 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_light.xml: 588 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_light_focused.xml: 892 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_light_normal.xml: 584 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/design_bottom_navigation_item_background.xml: 784 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/design_snackbar_background.xml: 484 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/ic_menu_arrow_up_black_24dp.xml: 668 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/ic_mtrl_checked_circle.xml: 672 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/circle_shape_white.xml: 611 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_dark.xml: 905 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_focused.xml: 1172 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_normal.xml: 634 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_disabled.xml: 1452 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_light.xml: 909 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_light_focused.xml: 1174 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_light_normal.xml: 636 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_dark.xml: 905 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_dark_focused.xml: 1172 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_dark_normal.xml: 726 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_disabled.xml: 1546 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_light.xml: 909 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_light_focused.xml: 1174 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_light_normal.xml: 728 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/design_bottom_navigation_item_background.xml: 743 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/design_snackbar_background.xml: 554 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/ic_menu_arrow_up_black_24dp.xml: 810 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/ic_mtrl_checked_circle.xml: 712 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/ic_youtube.png: 20122 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable/mtrl_dialog_background.xml: 716 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/mtrl_ic_error.xml: 644 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/mtrl_popupmenu_background.xml: 740 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/mtrl_popupmenu_background_dark.xml: 740 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/mtrl_tabs_default_indicator.xml: 628 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/mtrl_dialog_background.xml: 1201 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_ic_error.xml: 718 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_popupmenu_background.xml: 782 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_popupmenu_background_dark.xml: 782 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_tabs_default_indicator.xml: 516 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/placeholder.jpg: 163582 bytes (replaced with small dummy file of size 0 bytes)
-Skipped unused resource res/drawable/tab_icon_color_selector.xml: 464 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable/tab_indicator.xml: 632 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-v22/tab_indicator.xml: 700 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/tab_icon_color_selector.xml: 453 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/tab_indicator.xml: 553 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-v22/tab_indicator.xml: 701 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/turtle.png: 22842 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml: 908 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml: 1040 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml: 872 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-v21/design_bottom_navigation_item_background.xml: 264 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-v23/mtrl_popupmenu_background_dark.xml: 1228 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml: 1201 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml: 1431 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml: 1129 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-v21/design_bottom_navigation_item_background.xml: 187 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-v23/mtrl_popupmenu_background_dark.xml: 1541 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_add_white_24dp.png: 104 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_baseline_location_on_24.png: 314 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_launcher_background.png: 220 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v4/ic_lock_black_24dp.png: 218 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 610 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 500 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 615 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 465 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_add_white_24dp.png: 97 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_baseline_location_on_24.png: 340 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_launcher_background.png: 230 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v4/ic_lock_black_24dp.png: 205 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 897 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 683 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 960 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 694 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_add_white_24dp.png: 144 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_baseline_location_on_24.png: 544 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_launcher_background.png: 391 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v4/ic_lock_black_24dp.png: 307 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 1032 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 776 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 1086 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 808 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_add_white_24dp.png: 120 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_baseline_location_on_24.png: 618 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_launcher_background.png: 490 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v4/ic_lock_black_24dp.png: 372 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 1510 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 1138 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 1638 bytes (replaced with small dummy file of size 77 bytes)
@@ -9002,34 +9034,38 @@ Skipped unused resource res/drawable-xxhdpi-v4/ic_add_white_24dp.png: 139 bytes 
 Skipped unused resource res/drawable-xxhdpi-v4/ic_baseline_location_on_24.png: 913 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_launcher_background.png: 793 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_lock_black_24dp.png: 542 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-anydpi-v21/ic_add_white_24dp.xml: 620 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-anydpi-v21/ic_baseline_location_on_24.xml: 756 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-anydpi-v21/ic_launcher_background.xml: 5696 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-anydpi-v21/ic_lock_black_24dp.xml: 824 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/drawable-anydpi-v24/ic_launcher_foreground.xml: 1696 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/interpolator/mtrl_linear.xml: 132 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/abc_action_bar_up_container.xml: 440 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/abc_activity_chooser_view.xml: 1684 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/abc_activity_chooser_view_list_item.xml: 1304 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/custom_dialog.xml: 612 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/design_bottom_navigation_item.xml: 1508 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/design_layout_snackbar.xml: 528 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/design_layout_snackbar_include.xml: 1444 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/design_layout_tab_icon.xml: 408 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/design_layout_tab_text.xml: 436 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_alert_dialog.xml: 2476 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_alert_dialog_actions.xml: 1620 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout-v22/mtrl_alert_dialog_actions.xml: 1764 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_alert_dialog_title.xml: 956 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_alert_select_dialog_item.xml: 588 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_alert_select_dialog_multichoice.xml: 940 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_alert_select_dialog_singlechoice.xml: 940 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_layout_snackbar.xml: 528 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_layout_snackbar_include.xml: 1480 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_picker_text_input_date.xml: 984 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout/mtrl_picker_text_input_date_range.xml: 1460 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout-sw600dp-v13/design_layout_snackbar.xml: 528 bytes (replaced with small dummy file of size 104 bytes)
-Skipped unused resource res/layout-sw600dp-v13/mtrl_layout_snackbar.xml: 528 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_add_white_24dp.png: 168 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_baseline_location_on_24.png: 1194 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_launcher_background.png: 1229 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v4/ic_lock_black_24dp.png: 747 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_add_white_24dp.xml: 705 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_baseline_location_on_24.xml: 838 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_launcher_background.xml: 12229 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/ic_lock_black_24dp.xml: 868 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v24/ic_launcher_foreground.xml: 2168 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/interpolator/mtrl_linear.xml: 26 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/abc_action_bar_up_container.xml: 593 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/abc_activity_chooser_view.xml: 3977 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/abc_activity_chooser_view_list_item.xml: 2750 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/custom_dialog.xml: 850 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/design_bottom_navigation_item.xml: 3272 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/design_layout_snackbar.xml: 653 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/design_layout_snackbar_include.xml: 3423 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/design_layout_tab_icon.xml: 414 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/design_layout_tab_text.xml: 502 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_alert_dialog.xml: 6054 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_alert_dialog_actions.xml: 3333 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-v22/mtrl_alert_dialog_actions.xml: 3594 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_alert_dialog_title.xml: 1785 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_alert_select_dialog_item.xml: 1107 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_alert_select_dialog_multichoice.xml: 1906 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_alert_select_dialog_singlechoice.xml: 1898 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_layout_snackbar.xml: 635 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_layout_snackbar_include.xml: 3527 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_picker_text_input_date.xml: 2024 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_picker_text_input_date_range.xml: 3346 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-sw600dp-v13/design_layout_snackbar.xml: 671 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-sw600dp-v13/mtrl_layout_snackbar.xml: 653 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/mipmap-mdpi-v4/ic_forward.png: 304 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/mipmap-hdpi-v4/ic_forward.png: 442 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/mipmap-xhdpi-v4/ic_forward.png: 565 bytes (replaced with small dummy file of size 67 bytes)

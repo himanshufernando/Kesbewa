@@ -471,7 +471,7 @@
 -dontwarn com.google.android.gms.measurement.AppMeasurement*
 
 # End of content from C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\bafe461faffa5b8b88dd7c6bc24684b9\jetified-firebase-messaging-20.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\9faee50e88148e7c5e5c27e5fd3bc28f\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# The proguard configuration file for the following section is C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\94511b23ea039369c0c497d43fb4b712\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
 # Allow R8 to optimize away the FastServiceLoader.
 # Together with ServiceLoader optimization in R8
 # this results in direct instantiation when loading Dispatchers.Main
@@ -494,7 +494,7 @@
     boolean getDEBUG() return false;
     boolean getRECOVER_STACK_TRACES() return false;
 }
-# End of content from C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\9faee50e88148e7c5e5c27e5fd3bc28f\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
+# End of content from C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\94511b23ea039369c0c497d43fb4b712\rules\lib\META-INF\com.android.tools\r8-from-1.6.0\coroutines.pro
 # The proguard configuration file for the following section is C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\56fb6b75531c22a786e97a7745367078\room-runtime-2.2.4\proguard.txt
 -keep class * extends androidx.room.RoomDatabase
 -dontwarn androidx.room.paging.**
@@ -546,7 +546,7 @@
 -keep,allowobfuscation interface <1>
 
 # End of content from C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\f66c6e1c8c039067388ade3717f1bd36\rules\lib\META-INF\proguard\retrofit2.pro
-# The proguard configuration file for the following section is C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\proguard.txt
 ### OKHTTP
 
 # Platform calls Class.forName on types which do not exist on Android to determine platform.
@@ -560,7 +560,7 @@
 # JDK 7-only method which is @hide on Android. Animal sniffer annotation.
 -dontwarn okio.DeflaterSink
 
-# End of content from C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\74b21bc3753843fb416df8480b40c331\jetified-picasso-2.71828\proguard.txt
+# End of content from C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\af0b22f3155fc5805b0f7e37688459c7\jetified-picasso-2.71828\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Himanshu\.gradle\caches\transforms-2\files-2.1\135a5d2712d1ae7823c11ed1cb193123\rules\lib\META-INF\proguard\okhttp3.pro
 # JSR 305 annotations are for embedding nullability information.
 -dontwarn javax.annotation.**
