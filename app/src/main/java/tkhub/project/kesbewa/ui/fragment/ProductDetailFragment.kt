@@ -97,6 +97,9 @@ class ProductDetailFragment : Fragment() {
 
 
         var bottomSheetBehavior = BottomSheetBehavior.from(binding.root.bottom_sheet_layout)
+
+
+
         binding.root.recyclerView_product_large_images.adapter = adapterLargeImages
 
         binding.root.recyclerView_product_image_gall.adapter = adapterLargeImagesGallery

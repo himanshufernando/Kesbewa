@@ -19,11 +19,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/diavlo_medium"
         android:text="Kesbewa"
         android:textColor="@color/colorPrimary"
@@ -31,7 +32,6 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView_spalsh"
         app:layout_constraintStart_toStartOf="@+id/imageView_spalsh"
         app:layout_constraintTop_toBottomOf="@+id/imageView_spalsh" />
-
 
     <com.tuyenmonkey.mkloader.MKLoader
         android:layout_width="50dp"
